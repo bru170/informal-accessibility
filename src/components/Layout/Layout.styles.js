@@ -1,13 +1,13 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, {createGlobalStyle} from "styled-components"
 
 export const Primary = styled.main`
   padding: 110px 0 0 0;
-`;
+`
 
 export const GlobalStyles = createGlobalStyle`
 {
   html {
-    font-family: 'arial', sans-serif;
+    font-family: 'Fira Sans';
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }
@@ -615,4 +615,4 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 }
-`;
+`
