@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const NavigationWrapper = styled.nav`
   font-family: "Helvetica";
-  color: ##bb3355;
+  color: pink;
   font-size: 1rem;
   letter-spacing: 1px;
   display: none;
@@ -25,7 +25,7 @@ export const NavigationWrapper = styled.nav`
     display: block;
     margin: 0 10px 0 0;
     float: left;
-    height: 30px;
+    height: 40px;
     position: relative;
 
     a {
@@ -59,10 +59,10 @@ export const NavigationWrapper = styled.nav`
     position: absolute;
     left: 0;
     margin: 0;
-    top: 30px;
+    top: 0px;
     text-transform: none;
     background: #fff;
-    padding: 15px 10px 10px 10px;
+    padding: 0px 10px 10px 10px;
     box-shadow: 0px 6px 23px -10px rgba(0, 0, 0, 0.5);
   }
 

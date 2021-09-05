@@ -61,6 +61,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   a:active,
   a:hover {
+    color: #bb3355;
     outline-width: 0;
   }
   abbr[title] {
@@ -77,8 +78,8 @@ export const GlobalStyles = createGlobalStyle`
     font-style: italic;
   }
   h1 {
-    font-family: 'Teko', Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-family: 'Helvetica Neue';
+    font-weight: normal;
     font-size: 2em;
     margin: 0.67em 0;
   }
@@ -218,7 +219,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   body {
     color: hsla(0, 0%, 0%, 0.8);
-    font-family: 'arial', georgia, serif;
+    font-family: 'Helvetica Neue';
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
@@ -245,22 +246,25 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1rem;
+    font-family: 'Helvetica Neue';
+    font-size: 1rem;
     line-height: 1.7rem;
   }
 
   h1 {
-    font-size: 2.2rem;
-    font-family: 'Teko', Arial;
-    font-weight: 800;
+    font-size: 2rem;
+    font-family: 'Helvetica Neue';
+    font-weight: normal;
     letter-spacing: 1px;
-    color: #282828;
-    text-transform: uppercase;
+    color: #bb3355;
+    font-weight: bold;
     line-height: 40px;
     margin-top: 10px;
   }
   h2 {
+    font-size: 1.7rem;
+    font-weight: normal;
+    color: #bb3355;
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
@@ -269,11 +273,9 @@ export const GlobalStyles = createGlobalStyle`
     padding-right: 0;
     padding-top: 0;
     margin-bottom: 1.45rem;
-    color: inherit;
-    font-family: 'Teko', Arial, Helvetica Neue, sans-serif;
+    font-family: 'Helvetica Neue';
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 1.62671rem;
     line-height: 1.1;
   }
   h3 {
@@ -284,31 +286,30 @@ export const GlobalStyles = createGlobalStyle`
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin-bottom: 1rem;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: 'Helvetica Neue';
+
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1.38316rem;
     line-height: 1.1;
   }
   h4 {
-    font-family: Arial;
-    font-weight: 800;
+    font-family: 'Helvetica Neue';
+    font-weight: normal;
     font-size: 1.2rem;
     letter-spacing: 1px;
   }
   h5 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue';
     font-size: 1rem;
     font-style: normal;
     font-variant: normal;
-    font-weight: 200;
+    font-weight: normal;
     letter-spacing: 1px;
     margin-bottom: 10px;
     color: #000;
-    text-transform: uppercase;
   }
   h6 {
     font-family: 'Times New Roman';
@@ -380,7 +381,7 @@ export const GlobalStyles = createGlobalStyle`
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin-bottom: 1rem;
   }
   figure {
     margin-left: 0;

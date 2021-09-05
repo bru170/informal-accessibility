@@ -9,6 +9,24 @@ export const useLatestBlogPost = () => {
             title
             excerpt
             uri
+            featuredImage {
+              node {
+                altText
+                sizes
+                localFile {
+                  childImageSharp {
+                    gatsbyImageData(placeholder: NONE)
+                  }
+                }
+              }
+            }
+            author {
+              node {
+                name
+                username
+              }
+            }
+            date(formatString: "LL")
           }
         }
       }

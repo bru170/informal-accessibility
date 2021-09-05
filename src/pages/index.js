@@ -2,8 +2,9 @@ import * as React from "react"
 import {Link} from "gatsby"
 import {StaticImage} from "gatsby-plugin-image"
 import Hero from "../components/Hero/Hero"
-
+import LatestBlogPost from "../components/LatestBlogPost/LatestBlogPost"
 import Layout from "../components/Layout/Layout"
+import About from "../components/About/About"
 
 const IndexPage = () => (
   <>
@@ -13,10 +14,8 @@ const IndexPage = () => (
       <html lang="en" />
     </head>
     <Layout>
-      <Hero />
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
+      <About />
+      <LatestBlogPost />
     </Layout>
   </>
 )

@@ -1,29 +1,17 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const AboutWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  background: #ddd;
-  width: 100%;
-  text-align: center;
-
-  @media screen and (min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-    text-align: left;
-  }
-
-  .about-text {
-    padding: 40px 20px 20px 40px;
-
-    @media screen and (max-width: 768px) {
-      padding: 20px;
-    }
-  }
-`;
+  max-width: 1180px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  text-align: left;
+`
 
 export const AboutImage = styled.div`
-  background-image: ${({ image }) => `url(${image})`};
+  background-image: ${({image}) => `url(${image})`};
   background-size: cover;
   background-position: center;
   min-height: 300px;
-`;
+`
