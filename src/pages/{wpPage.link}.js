@@ -3,6 +3,7 @@ import React from "react"
 import styled from "styled-components"
 import HeroBanner from "../components/HeroBanner/HeroBanner"
 import Layout from "../components/Layout/Layout"
+import BreadCrumb from "../components/BreadCrumb/BreadCrumb"
 
 const Wrapper = styled.div`
   max-width: 1180px;

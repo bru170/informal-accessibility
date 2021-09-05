@@ -1,7 +1,7 @@
 import React from "react"
 import {Wrapper} from "./HeroBanner.styles"
 
-const HeroBanner = ({title, description}) => {
+const HeroBanner = ({title}) => {
   return (
     <Wrapper>
       <h1>{title}</h1>
