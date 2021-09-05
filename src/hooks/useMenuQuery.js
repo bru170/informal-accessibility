@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from "gatsby"
+import {useStaticQuery, graphql} from "gatsby"
 
 export const useMenuQuery = () => {
   const data = useStaticQuery(graphql`
@@ -8,7 +8,7 @@ export const useMenuQuery = () => {
           title
         }
       }
-      menu: wpMenu(name: { eq: "mainMenu" }) {
+      menu: wpMenu(name: {eq: "mainNav"}) {
         menuItems {
           nodes {
             label

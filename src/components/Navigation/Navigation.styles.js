@@ -1,16 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const NavigationWrapper = styled.nav`
-  font-family: 'Teko', Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  color: #212121;
+  font-family: "Helvetica";
+  color: ##bb3355;
   font-size: 1rem;
-  font-weight: 600;
   letter-spacing: 1px;
   display: none;
 
   .nav-active {
-    color: #ee2562;
+    color: ##bb3355;
+    text-decoration: underline;
   }
 
   @media (min-width: 992px) {
@@ -86,4 +85,4 @@ export const NavigationWrapper = styled.nav`
       opacity: 1;
     }
   }
-`;
+`

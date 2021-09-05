@@ -1,6 +1,7 @@
 import styled from "styled-components"
-import { GatsbyImage } from "gatsby-plugin-image"
+import {GatsbyImage} from "gatsby-plugin-image"
 
+//plugin to get gatsby image
 export const StyledImg = styled(GatsbyImage)`
   max-height: 600px;
   margin-bottom: 60px;

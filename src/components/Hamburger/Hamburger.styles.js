@@ -1,12 +1,10 @@
 import styled from "styled-components"
 
 export const HamburgerButton = styled.div`
-  margin-right: 2em;
   position: fixed;
   display: block;
   z-index: 100000;
   right: 30px;
-  top: 35px;
   width: 40px;
   height: 40px;
   cursor: pointer;

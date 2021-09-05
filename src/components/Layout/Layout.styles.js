@@ -2,6 +2,7 @@ import styled, {createGlobalStyle} from "styled-components"
 
 export const Primary = styled.main`
   padding: 110px 0 0 0;
+  margin: 1rem;
 `
 
 export const GlobalStyles = createGlobalStyle`
@@ -13,6 +14,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   body {
     margin: 0;
+    background-color: #f0f0f0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
