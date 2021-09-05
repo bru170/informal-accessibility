@@ -1,6 +1,5 @@
 import React from "react"
 import {Link} from "gatsby"
-import Logo from "../../images/logo.svg"
 import Navigation from "../Navigation/Navigation"
 import {useMenuQuery} from "../../hooks/useMenuQuery"
 import {Wrapper, Content} from "./Header.styles"

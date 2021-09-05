@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+//todo make sure nav bar sticks to top, can see content through it atm
+
 export const Wrapper = styled.header`
   background: #f0f0f0;
   height: 40px;
@@ -15,7 +17,6 @@ export const Content = styled.div`
   height: 100%;
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 20px;
 
   img {
     width: 200px;

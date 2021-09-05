@@ -12,7 +12,7 @@ export const NavigationWrapper = styled.nav`
     text-decoration: underline;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 800px) {
     font-size: 0.85rem;
     display: block;
   }

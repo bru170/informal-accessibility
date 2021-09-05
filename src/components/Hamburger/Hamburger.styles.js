@@ -14,7 +14,7 @@ export const HamburgerButton = styled.div`
     transform: scale(1.2);
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 800px) {
     display: none;
   }
 `
