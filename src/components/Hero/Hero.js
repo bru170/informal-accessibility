@@ -8,14 +8,14 @@ const Hero = () => {
     wpPage: {ACF_HomePage: data}
   } = useHeroQuery()
 
+  console.log(data)
+
   const imageData = getImage(data.heroImage.localFile)
 
   return (
     <Wrapper>
-      <StyledImg image={imageData} alt="Hero Image" />
-      <HeaderWrapper>
-        <h1>{data.heroText}</h1>
-      </HeaderWrapper>
+      {/* <StyledImg image={imageData} alt="Hero Image" /> */}
+      <HeaderWrapper>{/* <h1>{data.heroText}</h1> */}</HeaderWrapper>
     </Wrapper>
   )
 }
