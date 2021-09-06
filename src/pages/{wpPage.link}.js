@@ -21,6 +21,9 @@ const PageTemplate = ({data}) => {
       {console.log({data})}
       <Wrapper>
         <HeroBanner title={data.wpPage.title} />
+        {data.wpPage.wpParent !== null && (
+          <BreadCrumb parent={data.wpPage.wpParent && data.wpPage.wpParent.node} />
+        )}
         <div
           dangerouslySetInnerHTML={{
             __html: data.wpPage.content
