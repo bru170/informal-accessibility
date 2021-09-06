@@ -1,13 +1,12 @@
 const path = require("path")
-const {number} = require("prop-types")
 
 exports.createPages = async ({graphql, actions, reporter}) => {
   const {createPage} = actions
 
   const archiveTemplate = path.resolve("./src/templates/archive.js")
 
-  const {result} = await graphql(`
-    query MyQuery {
+  const result = await graphql(`
+    {
       wp {
         readingSettings {
           postsPerPage
@@ -17,8 +16,8 @@ exports.createPages = async ({graphql, actions, reporter}) => {
         edges {
           node {
             id
-            count
             name
+            count
             uri
             slug
           }
@@ -26,13 +25,16 @@ exports.createPages = async ({graphql, actions, reporter}) => {
       }
     }
   `)
-  if (result.error) {
-    reporter.panicOnBuild(`Error getting page data!`, result.error)
+
+  // Check for errors
+  if (result.errors) {
+    reporter.panicOnBuild(`Something went horrible wrong!`, result.errors)
+    return
   }
 
-  const {wp, allWpCategory} = result.data
+  const {allWpCategory, wp} = result.data
 
-  //Pages for Categories
+  // Create pages for each category
   allWpCategory.edges.forEach((category) => {
     const postsPerPage = wp.readingSettings.postsPerPage
     const numberOfPosts = category.node.count
@@ -43,7 +45,7 @@ exports.createPages = async ({graphql, actions, reporter}) => {
     if (numberOfPosts > 0 || category.node.name !== "uncategorized") {
       Array.from({length: numPages}).forEach((_, i) => {
         createPage({
-          path: i === 0 ? category.node.uri : `${category.node.uri}${i + 1}`,
+          path: i === 0 ? `${category.node.uri}` : `${category.node.uri}${i + 1}`,
           component: archiveTemplate,
           context: {
             limit: postsPerPage,

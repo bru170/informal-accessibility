@@ -13,17 +13,12 @@ const ArchiveCategories = ({catId, categories}) => {
   return (
     <Wrapper>
       <Menu>
-        <li className="sidebar-menu-header">
-          <img src={PageIcon} alt="Cake It! - Archive Header" />
-          <span>Posts</span>
-        </li>
         {sortedCategories.map((cat) => {
           if (cat.node.count !== 0) {
             return cat.node.slug !== "uncategorized" ? (
               <li key={cat.node.id}>
-                <span className="count">{cat.node.count}</span>
-                <Link to={cat.node.uri} activeClassName="sidebar-highlighted">
-                  <span dangerouslySetInnerHTML={{__html: cat.node.name}} />
+                <Link to={`${cat.node.uri}`} activeClassName="sidebar-highlighted">
+                  <h3 dangerouslySetInnerHTML={{__html: cat.node.name}} />
                 </Link>
               </li>
             ) : null

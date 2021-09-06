@@ -18,7 +18,6 @@ const PageContent = styled.article`
 const PageTemplate = ({data}) => {
   return (
     <Layout>
-      {console.log({data})}
       <Wrapper>
         <HeroBanner title={data.wpPage.title} />
         {data.wpPage.wpParent !== null && (
