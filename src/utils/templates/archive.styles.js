@@ -1,10 +1,11 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
+import {Link} from "gatsby"
 
 export const Wrapper = styled.div`
   max-width: 1180px;
   margin: 0 auto;
-  padding: 20px;
+  margin-bottom: 40px;
+  text-align: left;
 `
 
 export const ContentWrapper = styled.div`

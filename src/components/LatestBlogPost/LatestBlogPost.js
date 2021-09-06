@@ -19,7 +19,7 @@ const LatestBlogPost = () => {
     <>
       <Wrapper>
         <h2>Featured Posts</h2>
-        <Link to={`/blog${uri}`}>
+        <Link to={`/engagements${uri}`}>
           <h3>{title}</h3>
         </Link>
         <p>{`By ${author} on ${date}`}</p>
@@ -34,7 +34,7 @@ const LatestBlogPost = () => {
             __html: except
           }}
         />
-        <Link to={`/blog${uri}`}>{title}... continue reading</Link>
+        <Link to={`/engagements${uri}`}>{title}... continue reading</Link>
       </Wrapper>
       <LatestBlogPost2 />
       <LatestBlogPost3 />
