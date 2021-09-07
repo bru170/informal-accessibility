@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import Footer from "../Footer/Footer"
+import FooterContainer from "../Footer/FooterContainer"
 import Hamburger from "../Hamburger/Hamburger"
 import Header from "../Header/Header"
 import MobileMenu from "../OverlayMenu/MobileMenu"
@@ -17,6 +17,7 @@ const Layout = ({children}) => {
       <MobileMenu menuOpen={menuOpen} callback={handleOverlayMenu} />
       <Header />
       <Primary>{children}</Primary>
+      <FooterContainer />
     </>
   )
 }

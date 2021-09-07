@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import {GatsbyImage} from "gatsby-plugin-image"
 import {Link} from "gatsby"
 
 export const Wrapper = styled.div`
@@ -8,18 +9,14 @@ export const Wrapper = styled.div`
   text-align: left;
 `
 
-export const StyledH2 = styled.h2`
-  font-weight: 500;
-  font-size: 1.8rem;
-  :hover {
-    color: #ee2562;
-  }
+export const StyledImg = styled(GatsbyImage)`
+  max-height: 300px;
+  margin-bottom: 40px;
+  width: 100%;
 `
 
-export const StyledDate = styled.div`
-  font-family: "Teko";
-  font-size: 1.1rem;
-  font-weight: 600;
+export const StyledDate = styled.p`
+  font-size: 1rem;
 `
 
 export const StyledReadMore = styled(Link)`
@@ -28,10 +25,16 @@ export const StyledReadMore = styled(Link)`
   padding-botom: 40px
 
   :hover {
-    background: #ee2562;
+    color: #ee2562;
   }
 
   :hover:after {
     border-left-color: #ee2562;
   }
+`
+
+export const Hr = styled.div`
+  border-top: 1px solid #bbb;
+  margin-top: 40px;
+  margin-bottom: 40px;
 `

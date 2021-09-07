@@ -1,39 +1,42 @@
 import React from "react"
 import {Link, graphql} from "gatsby"
+import {getImage} from "gatsby-plugin-image"
 import Layout from "../components/Layout/Layout"
-import BreadCrumb from "../components/BreadCrumb/BreadCrumb"
 import ArchiveCategories from "../components/ArchiveSidebar/ArchiveCategories"
 import Pagination from "../components/Pagination/Pagination"
 
-import {Wrapper, StyledH2, StyledDate, StyledReadMore} from "./archive.styles"
+import {Wrapper, StyledDate, Hr, StyledReadMore} from "./archive.styles"
 
 const archiveTemplate = ({
   data: {allWpPost},
   pageContext: {catId, catName, catUri, categories, numPages, currentPage}
 }) => {
-  console.log({allWpPost})
   return (
     <Layout>
       <Wrapper>
-        <BreadCrumb
-          parent={{
-            uri: "/engagements/all-posts/",
-            title: "engagements"
-          }}
-        />
+        <h1 style={{marginTop: "30px"}}>Engagements</h1>
+        <p>
+          orem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan porttitor tortor ut
+          pellentesque. Maecenas elementum neque sed dui consequat egestas. Pellentesque viverra
+          purus sit amet sapien facilisis laoreet. Nullam pharetra purus lobortis, efficitur lectus
+          vitae, elementum justo. Vestibulum a justo fermentum, eleifend est ut, facilisis sapien.
+          Fusce aliquam condimentum tortor, vel lobortis enim sagittis
+        </p>
+        <Hr />
         <ArchiveCategories catId={catId} categories={categories.edges} />
-        <h1 dangerouslySetInnerHTML={{__html: catName}} />
+        <Hr />
+
         {allWpPost.edges.map((post) => (
           <article key={post.node.id} className="entry-content">
             <Link to={`/engagements${post.node.uri}`}>
-              <StyledH2 dangerouslySetInnerHTML={{__html: post.node.title}} />
+              <h3 dangerouslySetInnerHTML={{__html: post.node.title}} />
             </Link>
             <StyledDate dangerouslySetInnerHTML={{__html: post.node.date}} />
-            <p dangerouslySetInnerHTML={{__html: post.node.excerpt}} />
+            <div dangerouslySetInnerHTML={{__html: post.node.excerpt}} />
             <StyledReadMore to={`/engagements${post.node.uri}`}>
               {post.node.title} continue reading
             </StyledReadMore>
-            <div className="dot-divider" />
+            <Hr />
           </article>
         ))}
         <Pagination catUri={catUri} page={currentPage} totalPages={numPages} />
@@ -58,7 +61,16 @@ export const pageQuery = graphql`
           excerpt
           uri
           slug
-          date(formatString: "DD MM YYYY")
+          date(formatString: "LL")
+          featuredImage {
+            node {
+              localFile {
+                childImageSharp {
+                  gatsbyImageData(placeholder: BLURRED)
+                }
+              }
+            }
+          }
         }
       }
     }
