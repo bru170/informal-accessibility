@@ -1,6 +1,6 @@
 import React from "react"
 import {Link} from "gatsby"
-import {CategoryWrapper, Menu} from "./ArchiveCategories.styles"
+import {CategoryWrapper, Menu, StyledH2} from "./ArchiveCategories.styles"
 
 const ArchiveCategories = ({categories}) => {
   const sortedCategories = [...categories].sort((x, y) => {
@@ -17,7 +17,7 @@ const ArchiveCategories = ({categories}) => {
             return cat.node.slug !== "uncategorized" ? (
               <li key={cat.node.id}>
                 <Link to={`${cat.node.uri}`}>
-                  <h3 dangerouslySetInnerHTML={{__html: cat.node.name}} />
+                  <StyledH2 dangerouslySetInnerHTML={{__html: cat.node.name}} />
                 </Link>
               </li>
             ) : null

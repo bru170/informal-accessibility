@@ -1,6 +1,5 @@
 import React from "react"
-import {Container, Wrapper, Row, Text, Column, Title, ExternalLink} from "./Footer.styles"
-import {Link} from "gatsby"
+import {Container, Wrapper, Row, Text, Link, Column, Title} from "./Footer.styles"
 
 const Footer = ({children, ...restProps}) => {
   return <Container {...restProps}>{children}</Container>
@@ -22,10 +21,6 @@ Footer.Column = function FooterColumn({children, ...restProps}) {
 
 Footer.Link = function FooterGatsbyLink({children, ...restProps}) {
   return <Link {...restProps}>{children}</Link>
-}
-
-Footer.ExternalLink = function FooterExternalLinkLink({children, ...restProps}) {
-  return <ExternalLink {...restProps}>{children}</ExternalLink>
 }
 
 Footer.Title = function FooterTitle({children, ...restProps}) {

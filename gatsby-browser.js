@@ -1,7 +1,8 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
-
-// You can delete this file if you're not using it
+exports.onRouteUpdate = ({location, prevLocation}) => {
+  if (prevLocation !== null) {
+    const skipLink = document.querySelector("#reach-skip-nav")
+    if (skipLink) {
+      skipLink.focus()
+    }
+  }
+}

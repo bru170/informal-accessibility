@@ -1,7 +1,7 @@
 import React from "react"
 import {Link} from "gatsby"
 import {useLatestBlogPost} from "../../hooks/useLatestBlogPost"
-import {Wrapper, StyledImg, StyledH2} from "./LatesBlogPost.styles"
+import {Wrapper, StyledImg} from "./LatesBlogPost.styles"
 import {getImage} from "gatsby-plugin-image"
 import LatestBlogPost2 from "./LatestBlogPost2"
 import LatestBlogPost3 from "./LatestBlogPost3"
@@ -15,14 +15,13 @@ const LatestBlogPost = () => {
   const except = data.allWpPost.edges[index].node.excerpt
   const uri = data.allWpPost.edges[index].node.uri
   const featuredImage = data.allWpPost.edges[index].node.featuredImage
+
   return (
     <>
       <Wrapper>
         <h2>Featured Posts</h2>
-        <Link to={`/engagements${uri}`}>
-          <h3>{title}</h3>
-        </Link>
-        <p>{`By ${author} on ${date}`}</p>
+        <h3>{title}</h3>
+        <p style={{textTransform: "capitalize"}}>{`By ${author} on ${date}`}</p>
         {featuredImage !== null && (
           <StyledImg
             image={getImage(featuredImage.node.localFile)}

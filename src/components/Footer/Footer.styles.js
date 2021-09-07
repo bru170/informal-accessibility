@@ -32,23 +32,23 @@ export const Row = styled.div`
   }
 `
 
-export const Title = styled.p`
+export const Title = styled.h2`
   font-size: 1.2rem;
   color: #fff;
   margin-bottom: 10px;
 `
 
 export const Text = styled.div`
-  color: black;
+  color: white;
 `
 
-export const ExternalLink = styled.a`
-  color: #fff;
-  margin-bottom: 20px;
-  font-size: 18px;
-  text-decoration: none;
+export const Link = styled.a`
+  color: white;
+
+  &:active,
   &:hover {
-    color: #ff9c00;
-    transition: 200ms ease-in;
+    color: white;
+    outline-width: 0;
+    text-decoration: underline;
   }
 `

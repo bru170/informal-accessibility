@@ -13,3 +13,7 @@ export const Menu = styled.ul`
     margin: 0;
   }
 `
+
+export const StyledH2 = styled.h2`
+  font-size: 1rem;
+`

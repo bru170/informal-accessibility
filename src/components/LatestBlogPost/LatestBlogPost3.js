@@ -1,7 +1,7 @@
 import React from "react"
 import {Link} from "gatsby"
 import {useLatestBlogPost} from "../../hooks/useLatestBlogPost"
-import {Wrapper, StyledImg, StyledH2} from "./LatesBlogPost.styles"
+import {Wrapper, StyledImg} from "./LatesBlogPost.styles"
 import {getImage} from "gatsby-plugin-image"
 
 const LatestBlogPost3 = () => {
@@ -16,9 +16,7 @@ const LatestBlogPost3 = () => {
 
   return (
     <Wrapper>
-      <Link to={`/engagements${uri}`}>
-        <h3>{title}</h3>
-      </Link>
+      <h3>{title}</h3>
       <p>{`By ${author} on ${date}`}</p>
       {featuredImage !== null && (
         <StyledImg
