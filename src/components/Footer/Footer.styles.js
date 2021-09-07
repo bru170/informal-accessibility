@@ -1,20 +1,54 @@
 import styled from "styled-components"
 
-export const FooterWrapper = styled.footer`
-  display: flex;
-  position: absolute;
-  align-items: center;
-  bottom: 0;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  background: #212121;
-  color: #fff;
-  text-align: center;
-  height: 200px;
+export const Container = styled.div`
+  padding: 80px 60px;
+  background: #bb3355;
+  @media (max-width: 1000px) {
+    padding: 70px 30px;
+  }
+`
 
-  p {
-    margin: 0;
-    padding: 0;
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+`
+
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 60px;
+`
+
+export const Row = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 20px;
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+`
+
+export const Title = styled.h2`
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 10px;
+`
+
+export const Text = styled.div`
+  color: white;
+`
+
+export const Link = styled.a`
+  color: white;
+
+  &:active,
+  &:hover {
+    color: white;
+    outline-width: 0;
+    text-decoration: underline;
   }
 `

@@ -12,9 +12,3 @@ export const StyledImg = styled(GatsbyImage)`
   margin-bottom: 40px;
   width: 100%;
 `
-export const StyledH2 = styled.h2`
-  font-size: 1.7rem;
-  font-weight: normal;
-  color: #bb3355;
-  cursor: pointer;
-`

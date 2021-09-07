@@ -63,6 +63,7 @@ export const GlobalStyles = createGlobalStyle`
   a:hover {
     color: #bb3355;
     outline-width: 0;
+    text-decoration: underline;
   }
   abbr[title] {
     border-bottom: none;
@@ -261,10 +262,11 @@ export const GlobalStyles = createGlobalStyle`
     line-height: 40px;
     margin-top: 10px;
   }
+  
   h2 {
     font-size: 1.7rem;
     font-weight: normal;
-    color: #bb3355;
+    color: black;
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
@@ -286,19 +288,19 @@ export const GlobalStyles = createGlobalStyle`
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5em;
     color: inherit;
     font-family: 'Helvetica Neue';
 
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 1.38316rem;
+    font-size: 1.3rem;
     line-height: 1.1;
   }
   h4 {
     font-family: 'Helvetica Neue';
     font-weight: normal;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
   }
   h5 {
@@ -313,7 +315,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   h6 {
     font-family: 'Times New Roman';
-    font-size: 28px;
+    font-size: 0.875rem;
     color: #fff;
     font-style: italic;
     margin: 40px 20% 20px 20%;
