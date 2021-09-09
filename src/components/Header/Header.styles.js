@@ -2,15 +2,17 @@ import styled from "styled-components"
 
 //todo make sure nav bar sticks to top, can see content through
 
-export const Wrapper = styled.header`
-  background: #f0f0f0;
+export const Wrapper = styled.nav`
   height: 40px;
-  position: fixed;
   width: 100%;
-  z-index: 10000;
+  /* z-index: 10000;
+  position: sticky;
+  top: 0.5px; */
+  padding-top: 20px;
+  background-color: #f0f0f0;
 `
 
-export const Content = styled.div`
+export const Content = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
