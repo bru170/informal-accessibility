@@ -24,13 +24,14 @@ const archiveTemplate = ({
       <Layout>
         <Wrapper>
           <h1 style={{marginTop: "30px"}}>Engagements</h1>
-          <p style={{paddingBottom: "20px"}}>
+          <p>
             orem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan porttitor tortor ut
             pellentesque.
           </p>
+          <Hr />
+          <h2 dangerouslySetInnerHTML={{__html: catName}} id="catergory" />
           <ArchiveCategories catId={catId} categories={categories.edges} />
           <Hr />
-
           {allWpPost.edges.map((post) => (
             <article key={post.node.id} className="entry-content">
               <h3 dangerouslySetInnerHTML={{__html: post.node.title}} />
@@ -42,6 +43,8 @@ const archiveTemplate = ({
               <Hr />
             </article>
           ))}
+          <strong style={{paddingRight: 10}}>Tags:</strong>
+          <Hr />
           <Pagination catUri={catUri} page={currentPage} totalPages={numPages} />
         </Wrapper>
       </Layout>

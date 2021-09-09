@@ -12,3 +12,7 @@ export const List = styled.ul`
   display: flex;
   margin: 0;
 `
+
+export const l = styled.li`
+  padding-left: 10px;
+`

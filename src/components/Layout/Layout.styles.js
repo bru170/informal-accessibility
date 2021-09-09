@@ -20,6 +20,8 @@ export const GlobalStyles = createGlobalStyle`
     background-color: #f0f0f0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+
   }
 
   .whiteText {
@@ -64,9 +66,10 @@ export const GlobalStyles = createGlobalStyle`
   }
   a:active,
   a:hover {
-    color: #bb3355;
-    outline-width: 0;
     text-decoration: underline;
+    text-decoration-color: #bb3355;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
   }
   abbr[title] {
     border-bottom: none;

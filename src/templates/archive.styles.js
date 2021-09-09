@@ -7,6 +7,12 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   margin-bottom: 40px;
   text-align: left;
+
+  h2 {
+    background-color: #bb3355;
+    padding: 10px;
+    color: white;
+  }
 `
 
 export const StyledImg = styled(GatsbyImage)`

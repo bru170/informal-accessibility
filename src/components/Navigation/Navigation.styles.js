@@ -2,14 +2,16 @@ import styled from "styled-components"
 
 export const NavigationWrapper = styled.nav`
   font-family: "Helvetica";
-  color: pink;
   font-size: 1rem;
   letter-spacing: 1px;
   display: none;
 
   .nav-active {
-    color: #bb3355;
     text-decoration: underline;
+    text-decoration-color: #bb3355;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
+    color: #bb3355;
   }
 
   @media (min-width: 800px) {

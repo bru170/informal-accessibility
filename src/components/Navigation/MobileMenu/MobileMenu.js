@@ -14,7 +14,7 @@ const MobileMenu = ({menuOpen}) => {
             {menu.menuItems.nodes.map((item) =>
               !item.parentId ? (
                 <li key={item.id}>
-                  <Link to={item.url} activeClassName="overlayActive">
+                  <Link to={item.url} activeClassName="mobile-menu-active">
                     {item.label}
                   </Link>
                 </li>
