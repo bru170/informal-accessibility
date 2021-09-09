@@ -2,7 +2,7 @@ import React from "react"
 import {Helmet} from "react-helmet"
 import {Link, graphql} from "gatsby"
 import Layout from "../components/Layout/Layout"
-import ArchiveCategories from "../components/ArchiveSidebar/ArchiveCategories"
+import ArchiveCategories from "../components/ArchiveCategories/ArchiveCategories"
 import Pagination from "../components/Pagination/Pagination"
 
 import {Wrapper, StyledDate, Hr, StyledReadMore} from "./archive.styles"
