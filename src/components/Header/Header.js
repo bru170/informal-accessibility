@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <Wrapper>
       <Content>
-        <Link to="/">{site.siteMetadata.title} </Link>
+        <Link to="/">{site.siteMetadata.title}</Link>
         <Navigation menu={menu.menuItems.nodes} />
       </Content>
     </Wrapper>

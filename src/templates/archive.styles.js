@@ -22,7 +22,7 @@ export const StyledDate = styled.p`
 export const StyledReadMore = styled(Link)`
   font-size: 1rem;
   margin-bottom: 40px;
-  padding-botom: 40px
+  padding-bottom: 40px;
 
   :hover {
     color: #ee2562;

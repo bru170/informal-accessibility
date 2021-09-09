@@ -3,10 +3,13 @@ import styled, {createGlobalStyle} from "styled-components"
 export const Primary = styled.main`
   padding: 110px 0 0 0;
   margin: 1rem;
+
+  @media (max-width: 800px) {
+    padding: 20px 0 0 0;
+  }
 `
 
 export const GlobalStyles = createGlobalStyle`
-{
   html {
     font-family: 'Fira Sans';
     -ms-text-size-adjust: 100%;

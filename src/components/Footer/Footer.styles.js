@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
-export const Container = styled.div`
+export const Container = styled.footer`
   padding: 80px 60px;
   background: #bb3355;
-  @media (max-width: 1000px) {
-    padding: 70px 30px;
+  @media (max-width: 1200px) {
+    padding: 70px 10px;
   }
 `
 
@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1000px;
+  max-width: 1600px;
   margin: 0 auto;
 `
 
