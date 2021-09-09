@@ -1,6 +1,6 @@
 import React from "react"
 import {Link} from "gatsby"
-import {CategoryWrapper, Menu, StyledH2, ListItems} from "./ArchiveCategories.styles"
+import {CategoryWrapper, Menu, ListItems} from "./ArchiveCategories.styles"
 
 const ArchiveCategories = ({categories}) => {
   const sortedCategories = [...categories].sort((x, y) => {
@@ -11,15 +11,15 @@ const ArchiveCategories = ({categories}) => {
 
   return (
     <CategoryWrapper>
-      <Menu activeStyle={{color: "red"}}>
+      <Menu>
         {sortedCategories.map((cat) => {
           if (cat.node.count !== 0) {
             return cat.node.slug !== "uncategorized" ? (
-              <ListItems key={cat.node.id}>
-                <Link to={`${cat.node.uri}`} activeClassName="overlayActive">
-                  <StyledH2 dangerouslySetInnerHTML={{__html: cat.node.name}} />
+              <div key={cat.node.id}>
+                <Link to={`${cat.node.uri}`} activeClassName="categories-active">
+                  <ListItems dangerouslySetInnerHTML={{__html: cat.node.name}} />
                 </Link>
-              </ListItems>
+              </div>
             ) : null
           }
           return null

@@ -24,14 +24,10 @@ const archiveTemplate = ({
       <Layout>
         <Wrapper>
           <h1 style={{marginTop: "30px"}}>Engagements</h1>
-          <p>
+          <p style={{paddingBottom: "20px"}}>
             orem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan porttitor tortor ut
-            pellentesque. Maecenas elementum neque sed dui consequat egestas. Pellentesque viverra
-            purus sit amet sapien facilisis laoreet. Nullam pharetra purus lobortis, efficitur
-            lectus vitae, elementum justo. Vestibulum a justo fermentum, eleifend est ut, facilisis
-            sapien. Fusce aliquam condimentum tortor, vel lobortis enim sagittis
+            pellentesque.
           </p>
-          <Hr />
           <ArchiveCategories catId={catId} categories={categories.edges} />
           <Hr />
 
