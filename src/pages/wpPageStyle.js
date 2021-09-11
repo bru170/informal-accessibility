@@ -9,23 +9,20 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
   padding-bottom: 100px;
+
   .wp-block-columns {
-    padding-top: 70px;
-    padding-bottom: 100px;
     width: 100%;
+    min-height: 500px;
+    max-height: 500px;
 
     @media (max-width: 800px) {
       width: 100%;
       margin-top: 0;
-      padding-top: 20px;
-      padding-bottom: 20px;
       margin-bottom: 0;
     }
   }
 
   .wp-block-image {
-    padding-top: 70px;
-    padding-bottom: 100px;
     float: left;
     width: 25%;
 
@@ -41,8 +38,6 @@ export const Content = styled.div`
   img {
     @media (max-width: 800px) {
       margin-top: 0;
-      padding-top: 10px;
-      padding-bottom: 30px;
       margin-bottom: 0;
     }
   }
@@ -50,7 +45,7 @@ export const Content = styled.div`
   p {
     @media (max-width: 800px) {
       margin-top: 0;
-      padding-top: 10px;
+      padding-top: 20px;
       padding-bottom: 10px;
       margin-bottom: 0;
     }
@@ -61,8 +56,8 @@ export const Content = styled.div`
   }
 
   h2 {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 
     @media (max-width: 800px) {
       margin-top: 0;
@@ -73,7 +68,7 @@ export const Content = styled.div`
   }
 
   h3 {
-    padding-bottom: 0px;
+    padding-top: 20px;
     margin-bottom: 0px;
   }
 

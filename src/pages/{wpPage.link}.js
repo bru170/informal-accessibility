@@ -7,6 +7,7 @@ import BreadCrumb from "../components/BreadCrumb/BreadCrumb"
 import {Wrapper, Content, Container} from "./wpPageStyle"
 
 const PageTemplate = ({data}) => {
+  console.log(data.wpPage.content)
   return (
     <>
       <div className="application">
