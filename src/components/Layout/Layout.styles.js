@@ -65,6 +65,7 @@ export const GlobalStyles = createGlobalStyle`
 
   a {
     text-decoration: none;
+    font-size: 1.2rem;
     color: #bb3355;
   }
 
@@ -86,7 +87,7 @@ export const GlobalStyles = createGlobalStyle`
   
   h2 {
     font-family: 'Fira Sans';
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.45rem;
     text-rendering: optimizeLegibility;
@@ -94,27 +95,25 @@ export const GlobalStyles = createGlobalStyle`
   h3 {
     font-family: 'Fira Sans';
     font-weight: 700;
-    margin-bottom: 1.45rem;
+    font-size: 2rem;
     color: inherit;
-    text-rendering: optimizeLegibility;
-    font-size: 1.5rem;
   }
   h4 {
     font-family: 'Fira Sans';
+    font-size: 2rem;
     font-weight: 700;
-    font-size: 1.4rem;
   }
   h5 {
     font-family: 'Fira Sans';
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.45rem;
-    font-size: 1.4rem;
   }
   h6 {
     font-family: 'Fira Sans';
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.45rem;
-    font-size: 1.4rem;  
   }
  
 `

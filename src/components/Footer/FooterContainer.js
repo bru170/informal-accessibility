@@ -7,21 +7,19 @@ const FooterContainer = () => {
       <Footer.Wrapper>
         <Footer.Row>
           <Footer.Column>
-            <Footer.Title>Site Map</Footer.Title>
             <Footer.Link href="/">Homepage</Footer.Link>
             <Footer.Link href="/people/">People</Footer.Link>
             <Footer.Link href="/engagements/all-posts/">Engagements</Footer.Link>
             <Footer.Link href="/contact/">Contact</Footer.Link>
           </Footer.Column>
           <Footer.Column>
-            <Footer.Title>Social</Footer.Title>
-            <Footer.Link href="#">Facebook</Footer.Link>
-            <Footer.Link href="#">Twitter</Footer.Link>
+            <Footer.Link href="#">Privacy</Footer.Link>
+            <Footer.Link href="#">Accessibility Statement</Footer.Link>
           </Footer.Column>
           <Footer.Column>
-            <Footer.Title>Accessibility</Footer.Title>
-            <Footer.Text>Privacy</Footer.Text>
-            <Footer.Text>Statement</Footer.Text>
+            <Footer.Text href="#">Design and Development</Footer.Text>
+            <Footer.Text href="#">Barbara Nino and Antonia Bruno</Footer.Text>
+            <Footer.Text href="#">&#169; 2021</Footer.Text>
           </Footer.Column>
         </Footer.Row>
       </Footer.Wrapper>

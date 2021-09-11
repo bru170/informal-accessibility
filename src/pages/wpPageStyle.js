@@ -12,18 +12,21 @@ export const Content = styled.div`
 
   .wp-block-columns {
     width: 100%;
-    min-height: 500px;
-    max-height: 500px;
+    /* min-height: 500px;
+    max-height: 500px; */
 
     @media (max-width: 800px) {
-      width: 100%;
       margin-top: 0;
       margin-bottom: 0;
+      /* min-height: 0;
+      max-height: 0; */
     }
   }
 
   .wp-block-image {
     float: left;
+    padding-left: 0;
+    margin-left: 0;
     width: 25%;
 
     @media (max-width: 800px) {
