@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
 
   h2 {
     background-color: #bb3355;
+    border-radius: 10px;
     padding: 10px;
     color: white;
   }

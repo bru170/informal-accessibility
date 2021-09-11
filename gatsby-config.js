@@ -40,7 +40,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Teko\:200, 400, 500, 600, 700`],
+        fonts: [
+          `Fira Sans\:200, 400, 500, 600, 700, 800, 900`,
+          `Helvetica Neue\:200, 400, 500, 600, 700, 800, 900`,
+          `sans-serif\:200, 400, 500, 600, 700, 800, 900`
+        ],
         display: `swap`
       }
     }
