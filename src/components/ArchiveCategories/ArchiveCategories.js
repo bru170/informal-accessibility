@@ -15,14 +15,12 @@ const ArchiveCategories = ({categories}) => {
         {sortedCategories.map((cat) => {
           if (cat.node.count !== 0) {
             return cat.node.slug !== "uncategorized" ? (
-              // <AnchorLink to={`${cat.node.uri}#catergory`} stripHash>
               <Link to={`${cat.node.uri}`} activeClassName="categories-active">
                 <ListItems key={cat.node.id}>
                   <h3 dangerouslySetInnerHTML={{__html: cat.node.name}} />
                 </ListItems>
               </Link>
-            ) : // </AnchorLink>
-            null
+            ) : null
           }
           return null
         })}
