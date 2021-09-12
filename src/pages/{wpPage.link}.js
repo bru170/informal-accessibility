@@ -13,8 +13,8 @@ const PageTemplate = ({data}) => {
       <div className="application">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Informal Accessibility</title>
-          <meta name="Informal Accessibility" content="accessibility help" />
+          <title>SOS Project</title>
+          <meta name="SOS Project" content="accessibility help" />
           <html lang="en" />
         </Helmet>
       </div>

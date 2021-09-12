@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const NavigationWrapper = styled.nav`
-  font-family: "Helvetica";
+  font-family: "Fira Sans";
   font-size: 1rem;
   letter-spacing: 1px;
   display: none;
@@ -52,6 +52,10 @@ export const NavigationWrapper = styled.nav`
   }
 
   ul li a:hover {
-    color: #ee2562;
+    color: #bb3355;
+    text-decoration: underline;
+    text-decoration-color: #bb3355;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
   }
 `

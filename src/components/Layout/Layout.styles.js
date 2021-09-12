@@ -11,14 +11,14 @@ export const Primary = styled.main`
 
 export const GlobalStyles = createGlobalStyle`
   html {
-    font-family: 'Helvetica Neue';
+    font-family: "Fira Sans";
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }
 
   body {
+    font-family: "Helvetica";
     margin: 0;
-    font-family:'Helvetica Neue';
     background-color: #f0f0f0;
     scroll-behavior: smooth;
 
@@ -64,9 +64,11 @@ export const GlobalStyles = createGlobalStyle`
 
 
   a {
-    text-decoration: none;
+    text-decoration: underline;
+    cursor: pointer;
     font-size: 1.2rem;
     color: #bb3355;
+    font-weight: bolder;
   }
 
   p {
@@ -77,8 +79,8 @@ export const GlobalStyles = createGlobalStyle`
 
   h1 {
     font-size: 2rem;
-    font-family: 'Fira Sans';
-    font-weight: 700;
+    font-family: 'Fira Sans';    
+    font-weight: bolder;
     letter-spacing: 1px;
     color: #bb3355;
     margin-top: 10px;
@@ -87,32 +89,32 @@ export const GlobalStyles = createGlobalStyle`
   
   h2 {
     font-family: 'Fira Sans';
+    font-weight: bolder;
     font-size: 2rem;
-    font-weight: 700;
     margin-bottom: 1.45rem;
     text-rendering: optimizeLegibility;
   }
   h3 {
     font-family: 'Fira Sans';
-    font-weight: 700;
+    font-weight: bolder;
     font-size: 2rem;
     color: inherit;
   }
   h4 {
     font-family: 'Fira Sans';
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: bolder;
   }
   h5 {
     font-family: 'Fira Sans';
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: bolder;
     margin-bottom: 1.45rem;
   }
   h6 {
     font-family: 'Fira Sans';
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: bolder;
     margin-bottom: 1.45rem;
   }
  

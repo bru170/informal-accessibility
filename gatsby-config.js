@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Informal Accessibility`,
+    title: `SOS Project`,
     description: `Kick off yoInfrastructures for partially digital citizens: Supporting informal welfare work in the digitized state `,
     author: `@antoniabruno`
   },

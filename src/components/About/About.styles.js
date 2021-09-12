@@ -5,11 +5,8 @@ export const AboutWrapper = styled.div`
   margin: 0 auto;
   margin-bottom: 40px;
   text-align: left;
-`
 
-export const AboutImage = styled.div`
-  background-image: ${({image}) => `url(${image})`};
-  background-size: cover;
-  background-position: center;
-  min-height: 300px;
+  h1 {
+    color: black !important;
+  }
 `

@@ -16,8 +16,8 @@ const archiveTemplate = ({
       <div className="application">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Informal Accessibility</title>
-          <meta name="Informal Accessibility" content="accessibility help" />
+          <title>SOS Project</title>
+          <meta name="SOS Project" content="accessibility help" />
           <html lang="en" />
         </Helmet>
       </div>
@@ -25,13 +25,13 @@ const archiveTemplate = ({
         <Wrapper>
           <h1 style={{marginTop: "30px"}}>Engagements</h1>
           <p>
-            orem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan porttitor tortor ut
-            pellentesque.
+            The content on this page documents our proccess and update you on events and
+            publications
           </p>
           <Hr />
-          <h2 dangerouslySetInnerHTML={{__html: catName}} id="catergory" />
           <ArchiveCategories catId={catId} categories={categories.edges} />
           <Hr />
+          {/* <h2 dangerouslySetInnerHTML={{__html: catName}} id="catergory" /> */}
           {allWpPost.edges.map((post) => (
             <article key={post.node.id} className="entry-content">
               <h3 dangerouslySetInnerHTML={{__html: post.node.title}} />

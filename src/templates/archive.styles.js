@@ -32,11 +32,11 @@ export const StyledReadMore = styled(Link)`
   padding-bottom: 40px;
 
   :hover {
-    color: #ee2562;
+    color: #bb3355;
   }
 
   :hover:after {
-    border-left-color: #ee2562;
+    border-left-color: #bb3355;
   }
 `
 

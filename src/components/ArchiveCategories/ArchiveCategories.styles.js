@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 export const CategoryWrapper = styled.div`
   width: 100%;
-  margin: 0 auto;
   margin-bottom: 40px;
   text-align: left;
 `
@@ -12,20 +11,16 @@ export const Menu = styled.ul`
   list-style-type: none !important;
   margin: 0 auto;
 
-  @media (max-width: 1220px) {
-  }
-
-  @media (max-width: 800px) {
-    /* flex-direction: column;
-    columns: 100px;
-    align-items: start; */
-  }
-
   .categories-active {
-    /* text-decoration: underline;
-    text-decoration-color: #bb3355;
+    text-decoration: underline;
+    background-color: #bb3355;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    text-decoration-color: white;
     text-underline-offset: 3px;
-    text-decoration-thickness: 3px; */
+    text-decoration-thickness: 3px;
   }
 
   h3 {
@@ -35,6 +30,7 @@ export const Menu = styled.ul`
 
 export const ListItems = styled.li`
   display: inline;
+  padding: 10px;
 
   @media (max-width: 800px) {
     width: 25%;
