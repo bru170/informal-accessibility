@@ -59,8 +59,8 @@ export const Content = styled.div`
   }
 
   h2 {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     @media (max-width: 800px) {
       margin-top: 0;

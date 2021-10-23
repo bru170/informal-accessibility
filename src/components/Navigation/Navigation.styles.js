@@ -60,14 +60,9 @@ export const NavigationWrapper = styled.nav`
   }
 
   .nav-active {
-    text-decoration: underline;
-    background-color: #bb3355;
-    color: white;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
-    text-decoration-color: white;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 3px;
+    text-decoration: underline !important;
+    text-decoration-color: #bb3355 !important;
+    text-underline-offset: 3px !important;
+    text-decoration-thickness: 3px !important;
   }
 `
