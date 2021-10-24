@@ -3,18 +3,15 @@ import {Link} from "gatsby"
 import {useLatestBlogPost} from "../../hooks/useLatestBlogPost"
 import {Wrapper, StyledImg} from "./LatesBlogPost.styles"
 import {getImage} from "gatsby-plugin-image"
-import LatestBlogPost2 from "./LatestBlogPost2"
-import LatestBlogPost3 from "./LatestBlogPost3"
 
 const LatestBlogPost = () => {
-  const index = 0
   const data = useLatestBlogPost()
-  const title = data.allWpPost.edges[index].node.title
-  const author = data.allWpPost.edges[index].node.author.node.name
-  const date = data.allWpPost.edges[index].node.date
-  const except = data.allWpPost.edges[index].node.excerpt
-  const uri = data.allWpPost.edges[index].node.uri
-  const featuredImage = data.allWpPost.edges[index].node.featuredImage
+  const title = data.allWpPost.edges[0].node.title
+  const author = data.allWpPost.edges[0].node.author.node.name
+  const date = data.allWpPost.edges[0].node.date
+  const except = data.allWpPost.edges[0].node.excerpt
+  const uri = data.allWpPost.edges[0].node.uri
+  const featuredImage = data.allWpPost.edges[0].node.featuredImage
 
   return (
     <>
@@ -35,8 +32,6 @@ const LatestBlogPost = () => {
         />
         <Link to={`/engagements${uri}`}>{title}... continue reading</Link>
       </Wrapper>
-      <LatestBlogPost2 />
-      <LatestBlogPost3 />
     </>
   )
 }
