@@ -4,8 +4,36 @@ import {graphql} from "gatsby"
 import Layout from "../../components/Layout/Layout"
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb"
 import CategoriesPostbar from "../../components/CategoriesPostBar/CategoriesPostbar"
-import {Wrapper, PostContent, PostDetails, StyledH1, PersonIcon} from "./engagement.style"
+import styled from "styled-components"
 import {BsFillPersonFill} from "react-icons/bs"
+
+const Wrapper = styled.div`
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 20px;
+`
+
+const PostContent = styled.article`
+  margin-top: 20px;
+`
+
+const PostDetails = styled.span`
+  font-weight: bold;
+  text-transform: capitalize;
+`
+
+const StyledH1 = styled.h1`
+  padding-top: 40px;
+
+  @media (max-width: 800px) {
+    padding-top: 0px;
+  }
+`
+
+const PersonIcon = styled(BsFillPersonFill)`
+  transform: scale(1.5);
+  color: grey;
+`
 
 const PostTemplate = ({data}) => {
   console.log({data})

@@ -7,9 +7,7 @@ import {getImage} from "gatsby-plugin-image"
 const LatestBlogPost = () => {
   const data = useLatestBlogPost()
   const title = data.allWpPost.edges[0].node.title
-  const author = data.allWpPost.edges[0].node.author.node.name
   const date = data.allWpPost.edges[0].node.date
-  const except = data.allWpPost.edges[0].node.excerpt
   const uri = data.allWpPost.edges[0].node.uri
   const featuredImage = data.allWpPost.edges[0].node.featuredImage
 

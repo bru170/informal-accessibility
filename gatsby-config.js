@@ -1,12 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `SOS Project`,
+    title: `SOS`,
     description: `Kick off yoInfrastructures for partially digital citizens: Supporting informal welfare work in the digitized state `,
     author: `@antoniabruno`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-anchor-links`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -40,11 +39,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Fira Sans\:200, 400, 500, 600, 700, 800, 900`,
-          `Helvetica Neue\:200, 400, 500, 600, 700, 800, 900`,
-          `sans-serif\:200, 400, 500, 600, 700, 800, 900`
-        ],
+        fonts: [`Teko\:200, 400, 500, 600, 700`],
         display: `swap`
       }
     }
