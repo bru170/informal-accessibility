@@ -7,6 +7,13 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   margin-bottom: 40px;
   text-align: left;
+
+  h2 {
+    background-color: #bb3355;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+  }
 `
 
 export const StyledImg = styled(GatsbyImage)`
@@ -25,11 +32,11 @@ export const StyledReadMore = styled(Link)`
   padding-bottom: 40px;
 
   :hover {
-    color: #ee2562;
+    color: #bb3355;
   }
 
   :hover:after {
-    border-left-color: #ee2562;
+    border-left-color: #bb3355;
   }
 `
 

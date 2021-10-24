@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Informal Accessibility`,
+    title: `SOS`,
     description: `Kick off yoInfrastructures for partially digital citizens: Supporting informal welfare work in the digitized state `,
     author: `@antoniabruno`
   },
@@ -32,7 +32,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: `http://localhost:10018/graphql`
+        url: `https://dev-digital-welfare.pantheonsite.io/graphql`
       }
     },
     `gatsby-plugin-styled-components`,

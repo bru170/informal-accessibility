@@ -1,10 +1,11 @@
 import React from "react"
 import {Helmet} from "react-helmet"
 import {graphql} from "gatsby"
-import styled from "styled-components"
 import Layout from "../../components/Layout/Layout"
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb"
 import CategoriesPostbar from "../../components/CategoriesPostBar/CategoriesPostbar"
+import styled from "styled-components"
+import {BsFillPersonFill} from "react-icons/bs"
 
 const Wrapper = styled.div`
   max-width: 1180px;
@@ -21,6 +22,19 @@ const PostDetails = styled.span`
   text-transform: capitalize;
 `
 
+const StyledH1 = styled.h1`
+  padding-top: 40px;
+
+  @media (max-width: 800px) {
+    padding-top: 0px;
+  }
+`
+
+const PersonIcon = styled(BsFillPersonFill)`
+  transform: scale(1.5);
+  color: grey;
+`
+
 const PostTemplate = ({data}) => {
   console.log({data})
   return (
@@ -28,8 +42,8 @@ const PostTemplate = ({data}) => {
       <div className="application">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Informal Accessibility</title>
-          <meta name="Informal Accessibility" content="accessibility help" />
+          <title>SOS Project</title>
+          <meta name="SOS Project" content="accessibility help" />
           <html lang="en" />
         </Helmet>
       </div>
@@ -41,10 +55,15 @@ const PostTemplate = ({data}) => {
               title: "Engagements"
             }}
           />
-          <h1 dangerouslySetInnerHTML={{__html: data.post.title}} />
-          <span>By </span>
-          <PostDetails dangerouslySetInnerHTML={{__html: data.post.author.node.name}} />
-          <span> on </span>
+          <StyledH1 dangerouslySetInnerHTML={{__html: data.post.title}} />
+          <span>
+            <PersonIcon />
+          </span>
+          <PostDetails
+            dangerouslySetInnerHTML={{__html: data.post.author.node.name}}
+            style={{paddingLeft: "5px"}}
+          />
+          <span> - </span>
           <PostDetails
             dangerouslySetInnerHTML={{__html: data.post.date}}
             style={{marginBottom: 20}}

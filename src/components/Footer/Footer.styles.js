@@ -33,12 +33,12 @@ export const Row = styled.div`
 `
 
 export const Title = styled.h2`
-  font-size: 1.2rem;
+  text-decoration: underline;
   color: #fff;
   margin-bottom: 10px;
 `
 
-export const Text = styled.div`
+export const Text = styled.p`
   color: white;
 `
 

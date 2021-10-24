@@ -2,7 +2,7 @@ import React from "react"
 import {Helmet} from "react-helmet"
 import {Link, graphql} from "gatsby"
 import Layout from "../components/Layout/Layout"
-import ArchiveCategories from "../components/ArchiveSidebar/ArchiveCategories"
+import ArchiveCategories from "../components/ArchiveCategories/ArchiveCategories"
 import Pagination from "../components/Pagination/Pagination"
 
 import {Wrapper, StyledDate, Hr, StyledReadMore} from "./archive.styles"
@@ -16,8 +16,8 @@ const archiveTemplate = ({
       <div className="application">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Informal Accessibility</title>
-          <meta name="Informal Accessibility" content="accessibility help" />
+          <title>SOS Project</title>
+          <meta name="SOS Project" content="accessibility help" />
           <html lang="en" />
         </Helmet>
       </div>
@@ -25,16 +25,13 @@ const archiveTemplate = ({
         <Wrapper>
           <h1 style={{marginTop: "30px"}}>Engagements</h1>
           <p>
-            orem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan porttitor tortor ut
-            pellentesque. Maecenas elementum neque sed dui consequat egestas. Pellentesque viverra
-            purus sit amet sapien facilisis laoreet. Nullam pharetra purus lobortis, efficitur
-            lectus vitae, elementum justo. Vestibulum a justo fermentum, eleifend est ut, facilisis
-            sapien. Fusce aliquam condimentum tortor, vel lobortis enim sagittis
+            The content on this page documents our proccess and update you on events and
+            publications
           </p>
           <Hr />
           <ArchiveCategories catId={catId} categories={categories.edges} />
           <Hr />
-
+          {/* <h2 dangerouslySetInnerHTML={{__html: catName}} id="catergory" /> */}
           {allWpPost.edges.map((post) => (
             <article key={post.node.id} className="entry-content">
               <h3 dangerouslySetInnerHTML={{__html: post.node.title}} />
@@ -46,6 +43,8 @@ const archiveTemplate = ({
               <Hr />
             </article>
           ))}
+          <strong style={{paddingRight: 10}}>Tags:</strong>
+          <Hr />
           <Pagination catUri={catUri} page={currentPage} totalPages={numPages} />
         </Wrapper>
       </Layout>
