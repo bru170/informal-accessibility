@@ -21,8 +21,9 @@ const Content = styled.div`
     min-height: 500px;
     max-height: 500px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       max-width: 640px;
+      display: inline;
     }
   }
 
@@ -35,7 +36,7 @@ const Content = styled.div`
     min-height: 500px;
     max-height: 500px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       width: 100%;
       margin-top: 0;
       padding-top: 0;
@@ -45,14 +46,14 @@ const Content = styled.div`
   }
 
   img {
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       margin-top: 0;
       margin-bottom: 0;
     }
   }
 
   p {
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       margin-top: 0;
       padding-top: 20px;
       padding-bottom: 10px;
@@ -68,7 +69,7 @@ const Content = styled.div`
     padding-top: 10px;
     padding-bottom: 10px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       margin-top: 0;
       padding-top: 20px;
       padding-bottom: 10px;
@@ -85,7 +86,7 @@ const Content = styled.div`
     padding-bottom: 0px;
     margin-bottom: 0px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       margin-top: 0;
       padding-top: 10px;
       padding-bottom: 0;
