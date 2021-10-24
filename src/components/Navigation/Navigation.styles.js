@@ -1,15 +1,17 @@
 import styled from "styled-components"
 
 export const NavigationWrapper = styled.nav`
-  font-family: "Helvetica";
-  color: pink;
+  font-family: "Fira Sans";
   font-size: 1rem;
   letter-spacing: 1px;
   display: none;
 
   .nav-active {
-    color: #bb3355;
     text-decoration: underline;
+    text-decoration-color: #bb3355;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
+    color: #bb3355;
   }
 
   @media (min-width: 800px) {
@@ -33,7 +35,7 @@ export const NavigationWrapper = styled.nav`
       padding: 0 0 0 10px;
       transition: all 0.2s ease;
       text-decoration: none;
-      color: #000;
+      color: #bb3355;
 
       div {
         margin: -4px 0 0 5px;
@@ -50,6 +52,17 @@ export const NavigationWrapper = styled.nav`
   }
 
   ul li a:hover {
-    color: #ee2562;
+    color: #bb3355;
+    text-decoration: underline;
+    text-decoration-color: #bb3355;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
+  }
+
+  .nav-active {
+    text-decoration: underline !important;
+    text-decoration-color: #bb3355 !important;
+    text-underline-offset: 3px !important;
+    text-decoration-thickness: 3px !important;
   }
 `

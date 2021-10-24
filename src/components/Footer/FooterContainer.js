@@ -14,14 +14,9 @@ const FooterContainer = () => {
             <Footer.Link href="/contact/">Contact</Footer.Link>
           </Footer.Column>
           <Footer.Column>
-            <Footer.Title>Social</Footer.Title>
-            <Footer.Link href="#">Facebook</Footer.Link>
-            <Footer.Link href="#">Twitter</Footer.Link>
-          </Footer.Column>
-          <Footer.Column>
-            <Footer.Title>Accessibility</Footer.Title>
-            <Footer.Text>Privacy</Footer.Text>
-            <Footer.Text>Statement</Footer.Text>
+            <Footer.Title>Design and Development</Footer.Title>
+            <Footer.Text href="#">Barbara Nino and Antonia Bruno</Footer.Text>
+            <Footer.Text href="#">&#169; 2021</Footer.Text>
           </Footer.Column>
         </Footer.Row>
       </Footer.Wrapper>

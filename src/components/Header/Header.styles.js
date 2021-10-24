@@ -30,4 +30,9 @@ export const Content = styled.header`
   @media (max-width: 1220px) {
     padding: 0 20px;
   }
+
+  a {
+    text-decoration: none !important;
+    font-family: "Fira Sans";
+  }
 `

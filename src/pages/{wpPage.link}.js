@@ -1,26 +1,20 @@
 import {graphql} from "gatsby"
 import {Helmet} from "react-helmet"
 import React from "react"
-import styled from "styled-components"
 import HeroBanner from "../components/HeroBanner/HeroBanner"
 import Layout from "../components/Layout/Layout"
 import BreadCrumb from "../components/BreadCrumb/BreadCrumb"
-
-const Wrapper = styled.div`
-  max-width: 1180px;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  text-align: left;
-`
+import {Wrapper, Content, Container} from "./wpPageStyle"
 
 const PageTemplate = ({data}) => {
+  console.log(data.wpPage.content)
   return (
     <>
       <div className="application">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Informal Accessibility</title>
-          <meta name="Informal Accessibility" content="accessibility help" />
+          <title>SOS Project</title>
+          <meta name="SOS Project" content="accessibility help" />
           <html lang="en" />
         </Helmet>
       </div>
@@ -30,7 +24,7 @@ const PageTemplate = ({data}) => {
           {data.wpPage.wpParent !== null && (
             <BreadCrumb parent={data.wpPage.wpParent && data.wpPage.wpParent.node} />
           )}
-          <div
+          <Content
             dangerouslySetInnerHTML={{
               __html: data.wpPage.content
             }}

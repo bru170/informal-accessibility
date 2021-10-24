@@ -17,20 +17,16 @@ const LatestBlogPost = () => {
     <>
       <Wrapper>
         <h2>Featured Posts</h2>
-        <h3>{title}</h3>
-        <p style={{textTransform: "capitalize"}}>{`By ${author} on ${date}`}</p>
         {featuredImage !== null && (
           <StyledImg
             image={getImage(featuredImage.node.localFile)}
             alt={featuredImage.node.altText}
           ></StyledImg>
         )}
-        <div
-          dangerouslySetInnerHTML={{
-            __html: except
-          }}
-        />
-        <Link to={`/engagements${uri}`}>{title}... continue reading</Link>
+        <Link to={`/engagements${uri}`} aria-label={`${title} blog post`}>
+          {title}
+        </Link>
+        <p style={{textTransform: "capitalize"}}>{date}</p>
       </Wrapper>
     </>
   )
