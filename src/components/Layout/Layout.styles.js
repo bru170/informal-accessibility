@@ -66,8 +66,8 @@ export const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: underline;
     text-decoration-color: #bb3355;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
     cursor: pointer;
     font-size: 1.2rem;
     color: #bb3355;
