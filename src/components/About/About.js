@@ -4,12 +4,12 @@ import {AboutWrapper} from "./About.styles"
 
 const About = () => {
   const data = useAboutQuery()
-  const contentt = data.wpPage.content
+  const content = data.wpPage.content
   return (
     <AboutWrapper>
       <div
         dangerouslySetInnerHTML={{
-          __html: contentt
+          __html: content
         }}
       />
     </AboutWrapper>
