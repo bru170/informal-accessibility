@@ -17,11 +17,10 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: "Helvetica";
+    font-family: "Fira Sans";
     margin: 0;
     background-color: #f0f0f0;
     scroll-behavior: smooth;
-
   }
 
   .whiteText {
@@ -69,14 +68,14 @@ export const GlobalStyles = createGlobalStyle`
     text-underline-offset: 2px;
     text-decoration-thickness: 1px;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #bb3355;
     font-weight: bolder;
   }
 
   p {
-    font-family: 'Helvetica Neue';
-    font-size: 1.2rem;
+    font-family: "Fira Sans";
+    font-size: 2rem;
     margin-bottom: 1.45rem;
   }
 
