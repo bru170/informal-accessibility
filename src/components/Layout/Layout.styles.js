@@ -2,7 +2,7 @@ import styled, {createGlobalStyle} from "styled-components"
 
 export const Primary = styled.main`
   padding: 110px 0 0 0;
-  margin: 1rem;
+  margin: 2rem;
 
   @media (max-width: 800px) {
     padding: 20px 0 0 0;
@@ -68,19 +68,19 @@ export const GlobalStyles = createGlobalStyle`
     text-underline-offset: 2px;
     text-decoration-thickness: 1px;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.25rem;
     color: #bb3355;
     font-weight: bolder;
   }
 
   p {
-    font-family: "Fira Sans";
-    font-size: 2rem;
+    font-family: 'Fira Sans';
+    font-size: 1.25rem;
     margin-bottom: 1.45rem;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Fira Sans';    
     font-weight: bolder;
     letter-spacing: 1px;
@@ -91,31 +91,30 @@ export const GlobalStyles = createGlobalStyle`
   
   h2 {
     font-family: 'Fira Sans';
-    font-weight: bolder;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1.45rem;
     text-rendering: optimizeLegibility;
   }
   h3 {
     font-family: 'Fira Sans';
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: inherit;
   }
   h4 {
     font-family: 'Fira Sans';
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
   }
   h5 {
     font-family: 'Fira Sans';
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     margin-bottom: 1.45rem;
   }
   h6 {
     font-family: 'Fira Sans';
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     margin-bottom: 1.45rem;
   }

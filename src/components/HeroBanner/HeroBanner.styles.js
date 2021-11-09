@@ -7,6 +7,6 @@ export const StyledImg = styled(GatsbyImage)`
 `
 
 export const Wrapper = styled.div`
-  max-width: 1180px;
+  max-width: 1000px;
   text-align: left;
 `

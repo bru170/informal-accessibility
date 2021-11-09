@@ -6,7 +6,7 @@ import Layout from "../components/Layout/Layout"
 import About from "../components/About/About"
 
 const Wrapper = styled.div`
-  max-width: 1180px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: left;
 `

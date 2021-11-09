@@ -3,7 +3,7 @@ import {GatsbyImage} from "gatsby-plugin-image"
 import {Link} from "gatsby"
 
 export const Wrapper = styled.div`
-  max-width: 1180px;
+  max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 40px;
   text-align: left;
