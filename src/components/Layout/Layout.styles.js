@@ -43,18 +43,6 @@ export const GlobalStyles = createGlobalStyle`
     display: block;
   }
 
-  a {
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-  }
-  a:active,
-  a:hover {
-    text-decoration: underline;
-    text-decoration-color: #bb3355;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 3px;
-  }
-
   hr {
     box-sizing: content-box;
     height: 0;
@@ -71,11 +59,19 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 1.25rem;
     color: #bb3355;
     font-weight: bolder;
+  }
 
+  a:active,
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: #bb3355;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
   }
 
   a:focus {
       outline: white solid 3px;
+      padding: 15 px;
       background-color: #bb3355 !important;
       color: white !important;
   }  

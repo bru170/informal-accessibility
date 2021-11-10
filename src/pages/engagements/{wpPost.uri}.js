@@ -75,6 +75,7 @@ const PostTemplate = ({data}) => {
             date={data.post.date}
             author={data.post.author.node.name}
             categories={data.post.categories.nodes}
+            tags={data.post.tags.nodes}
           />
         </Wrapper>
       </Layout>
@@ -83,6 +84,29 @@ const PostTemplate = ({data}) => {
 }
 
 export default PostTemplate
+
+// export const pageQuery = graphql`
+//   query ($id: String!) {
+//     post: wpPost(id: {eq: $id}) {
+//       title
+//       content
+//       author {
+//         node {
+//           name
+//         }
+//       }
+//       date(formatString: "LL")
+//       categories {
+//         nodes {
+//           id
+//           name
+//           uri
+//           slug
+//         }
+//       }
+//     }
+//   }
+// `
 
 export const pageQuery = graphql`
   query ($id: String!) {
@@ -95,9 +119,17 @@ export const pageQuery = graphql`
         }
       }
       date(formatString: "LL")
-      categories {
+      tags {
         nodes {
           id
+          name
+          slug
+          uri
+        }
+      }
+      categories {
+        nodes {
+          description
           name
           uri
           slug
