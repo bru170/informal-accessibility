@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
   text-align: left;
 `
 export const StyledImg = styled(GatsbyImage)`
-  max-height: 300px;
   margin-bottom: 40px;
   width: 100%;
 `

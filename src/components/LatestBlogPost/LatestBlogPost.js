@@ -14,7 +14,7 @@ const LatestBlogPost = () => {
   return (
     <>
       <Wrapper>
-        <h2>Featured Posts</h2>
+        <h2>Latest Posts</h2>
         {featuredImage !== null && (
           <StyledImg
             image={getImage(featuredImage.node.localFile)}
