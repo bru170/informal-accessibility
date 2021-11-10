@@ -34,12 +34,11 @@ const archiveTemplate = ({
           {/* <h2 dangerouslySetInnerHTML={{__html: catName}} id="catergory" /> */}
           {allWpPost.edges.map((post) => (
             <article key={post.node.id} className="entry-content">
-              <h3 dangerouslySetInnerHTML={{__html: post.node.title}} />
+              <StyledReadMore
+                dangerouslySetInnerHTML={{__html: post.node.title}}
+                to={`/engagements${post.node.uri}`}
+              />
               <StyledDate dangerouslySetInnerHTML={{__html: post.node.date}} />
-              <div dangerouslySetInnerHTML={{__html: post.node.excerpt}} />
-              <StyledReadMore to={`/engagements${post.node.uri}`}>
-                {post.node.title}...continue reading
-              </StyledReadMore>
               <Hr />
             </article>
           ))}

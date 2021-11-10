@@ -71,7 +71,15 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 1.25rem;
     color: #bb3355;
     font-weight: bolder;
+
   }
+
+  a:focus {
+      outline: white solid 3px;
+      background-color: #bb3355 !important;
+      color: white !important;
+  }  
+
 
   p {
     font-family: 'Fira Sans';
