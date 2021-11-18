@@ -28,9 +28,7 @@ const archiveTemplate = ({
             The content on this page documents our proccess and update you on events and
             publications
           </p>
-          <Hr />
           <ArchiveCategories catId={catId} categories={categories.edges} />
-          <Hr />
           {/* <h2 dangerouslySetInnerHTML={{__html: catName}} id="catergory" /> */}
           {allWpPost.edges.map((post) => (
             <article key={post.node.id} className="entry-content">
