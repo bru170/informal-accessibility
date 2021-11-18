@@ -29,69 +29,18 @@ const Content = styled.div`
 
   .wp-block-image {
     float: left;
-    display: block;
-    padding-left: 0;
     margin-left: 0;
-    width: 25%;
-    min-height: 500px;
-    max-height: 500px;
-
+    display: block;
+    width: 30%;
     @media (max-width: 1000px) {
       width: 100%;
-      margin-top: 0;
-      padding-top: 0;
-      padding-bottom: 20px;
-      margin-bottom: 0;
-    }
-  }
-
-  img {
-    @media (max-width: 1000px) {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
-
-  p {
-    @media (max-width: 1000px) {
-      margin-top: 0;
-      padding-top: 20px;
-      padding-bottom: 10px;
-      margin-bottom: 0;
-    }
-  }
-
-  a {
-    padding-bottom: 0px;
-  }
-
-  h2 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    @media (max-width: 1000px) {
-      margin-top: 0;
-      padding-top: 20px;
-      padding-bottom: 10px;
-      margin-bottom: 0;
+      display: inline;
     }
   }
 
   h3 {
     padding-top: 20px;
     margin-bottom: 0px;
-  }
-
-  h4 {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-
-    @media (max-width: 1000px) {
-      margin-top: 0;
-      padding-top: 10px;
-      padding-bottom: 0;
-      margin-bottom: 0;
-    }
   }
 `
 

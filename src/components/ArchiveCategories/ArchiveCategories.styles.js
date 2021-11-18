@@ -7,9 +7,11 @@ export const CategoryWrapper = styled.div`
 `
 
 export const Menu = styled.ul`
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
   list-style-type: none !important;
-  margin: 0 auto;
+  margin-left: 0px !important;
+  padding-left: 0px !important;
 
   .categories-active {
     text-decoration: underline;
@@ -29,16 +31,5 @@ export const Menu = styled.ul`
 `
 
 export const ListItems = styled.li`
-  display: inline;
-  padding: 10px;
-
-  @media (max-width: 800px) {
-    width: 25%;
-    white-space: pre;
-  }
-
-  h2 {
-    font-size: 1rem;
-    color: black;
-  }
+  margin: 10px;
 `
