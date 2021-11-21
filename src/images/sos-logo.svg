@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#BC2C4F;}
-	.st1{fill:none;}
-	.st2{fill:#FFFFFF;}
-	.st3{font-family:'FiraSansCondensed-Bold';}
-	.st4{font-size:100px;}
-</style>
-<g>
-	<rect x="55.15" y="121.82" width="343.82" height="108.99"/>
-	<rect x="73.12" y="103.84" class="st0" width="343.82" height="108.99"/>
-	<rect x="97.72" y="116.76" class="st1" width="186.52" height="83.15"/>
-	<text transform="matrix(1 0 0 1 97.7225 192.5632)" class="st2 st3 st4">SOS </text>
-</g>
+	<svg width="400" height="110" xmlns="http://www.w3.org/2000/svg">
+	<rect y="10%" width="150" height="50" style="fill:rgb(0,0,0);stroke-width:3;stroke:rgb(0,0,0)" />
+	<rect x="3%" y="0" width="150" height="50" style="fill:rgb(188,44,79);stroke-width:3;stroke:rgb(188,44,79)" />
+	<text x="5%" y="38%" font-size="3em"  fill="white">SOS</text>
 </svg>
+

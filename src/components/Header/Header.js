@@ -12,8 +12,8 @@ const Header = () => {
     <Wrapper>
       <Content>
         <Link to="/" aria-label="Goes to Homepage">
-          {site.siteMetadata.title}..
-          {/* <Image src={Logo} alt="SOS Logo" /> */}
+          {/* {site.siteMetadata.title}.. */}
+          <Image src={Logo} alt="SOS Logo" />
         </Link>
         <Navigation menu={menu.menuItems.nodes} />
       </Content>
