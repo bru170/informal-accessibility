@@ -1,7 +1,5 @@
 import styled from "styled-components"
 
-//todo make sure nav bar sticks to top, can see content through
-
 export const Wrapper = styled.nav`
   height: 40px;
   width: 100%;
@@ -15,6 +13,31 @@ export const Image = styled.img`
   height: auto;
 `
 
+export const LogoContainer = styled.div`
+  text-decoration: none !important;
+  text-decoration-color: transparent !important;
+
+  a {
+    text-decoration: none !important;
+    text-decoration-color: transparent !important;
+  }
+
+  a:active {
+    background-color: transparent !important;
+    text-decoration: none !important;
+  }
+
+  a:focus {
+    background-color: transparent !important;
+    text-decoration: none !important;
+  }
+
+  a:hover {
+    background-color: transparent !important;
+    text-decoration: none !important;
+  }
+`
+
 export const Content = styled.header`
   display: flex;
   align-items: center;
@@ -26,22 +49,5 @@ export const Content = styled.header`
 
   @media (max-width: 1220px) {
     padding: 0 20px;
-  }
-
-  a {
-    text-decoration: none !important;
-    font-family: "Fira Sans";
-  }
-
-  a:active,
-  a:hover {
-    text-decoration: none !important;
-    text-decoration-color: transparent !important;
-  }
-
-  a:focus {
-    outline: #bb3355 solid 3px;
-    padding: 0 !important;
-    color: none !important;
   }
 `
