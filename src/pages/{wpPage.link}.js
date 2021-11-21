@@ -16,22 +16,27 @@ const Wrapper = styled.div`
 const Content = styled.div`
   padding-bottom: 100px;
 
-  .wp-block-columns {
-    width: 100%;
-    min-height: 500px;
-    max-height: 500px;
+  .is-style-twentytwentyone-border {
+    margin-bottom: 180px;
+  }
 
-    @media (max-width: 1000px) {
-      max-width: 640px;
-      display: inline;
-    }
+  .leader {
+    margin-bottom: 100px !important;
+  }
+
+  .wp-block-group-mona {
+    margin-bottom: 250px !important;
+  }
+
+  .wp-block-group-annika {
+    margin-bottom: 250px !important;
   }
 
   .wp-block-image {
     float: left;
     margin-left: 0;
     display: block;
-    width: 30%;
+    width: 35%;
     @media (max-width: 1000px) {
       width: 100%;
       display: inline;

@@ -4,7 +4,7 @@ import {Wrapper, List} from "./CategoriesPostbar.styles"
 
 const CategoriesPostbar = ({categories, tags}) => (
   <Wrapper>
-    <p>Categories:</p>
+    <h3>Categories:</h3>
     {/* {categories.map((cat) =>
         cat.slug === "all-posts" ? "" : <div style={{paddingRight: 10}}>Category:</div>
       )} */}
@@ -17,7 +17,7 @@ const CategoriesPostbar = ({categories, tags}) => (
         </List>
       ) : null
     )}
-    <p>Tags</p>
+    <h3>Tags:</h3>
     {tags.map((tags) =>
       tags.slug !== "all-posts" ? (
         <List key={tags.id}>
@@ -26,7 +26,9 @@ const CategoriesPostbar = ({categories, tags}) => (
           </Link>
         </List>
       ) : (
-        <p>No tags available</p>
+        <span>
+          <p>No tags available</p>
+        </span>
       )
     )}
   </Wrapper>
