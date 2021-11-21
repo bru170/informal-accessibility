@@ -18,18 +18,30 @@ const Content = styled.div`
 
   .is-style-twentytwentyone-border {
     margin-bottom: 180px;
+    @media (max-width: 1000px) {
+      margin-bottom: 0px !important;
+    }
   }
 
   .leader {
     margin-bottom: 100px !important;
+    @media (max-width: 1000px) {
+      margin-bottom: 0px !important;
+    }
   }
 
   .wp-block-group-mona {
     margin-bottom: 250px !important;
+    @media (max-width: 1000px) {
+      margin-bottom: 0px !important;
+    }
   }
 
   .wp-block-group-annika {
     margin-bottom: 250px !important;
+    @media (max-width: 1000px) {
+      margin-bottom: 0px !important;
+    }
   }
 
   .wp-block-image {
