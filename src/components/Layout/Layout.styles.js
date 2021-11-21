@@ -70,7 +70,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a:focus {
-      outline: white solid 3px;
+      outline: #bb3355 solid 3px;
       padding: 15 px;
       background-color: #bb3355 !important;
       color: white !important;

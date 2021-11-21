@@ -32,4 +32,16 @@ export const Content = styled.header`
     text-decoration: none !important;
     font-family: "Fira Sans";
   }
+
+  a:active,
+  a:hover {
+    text-decoration: none !important;
+    text-decoration-color: transparent !important;
+  }
+
+  a:focus {
+    outline: #bb3355 solid 3px;
+    padding: 0 !important;
+    color: none !important;
+  }
 `
