@@ -12,6 +12,11 @@ export const Wrapper = styled.nav`
   background-color: #f0f0f0;
 `
 
+export const Image = styled.img`
+  width: 320px;
+  height: auto;
+`
+
 export const Content = styled.header`
   display: flex;
   align-items: center;
