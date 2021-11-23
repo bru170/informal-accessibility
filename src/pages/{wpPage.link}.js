@@ -5,6 +5,7 @@ import HeroBanner from "../components/HeroBanner/HeroBanner"
 import Layout from "../components/Layout/Layout"
 import BreadCrumb from "../components/BreadCrumb/BreadCrumb"
 import styled from "styled-components"
+import Partners from "../components/Partners/Partners"
 
 const Wrapper = styled.div`
   max-width: 1000px;
@@ -32,6 +33,41 @@ const Content = styled.div`
 
   .wp-block-group-mona {
     margin-bottom: 250px !important;
+    @media (max-width: 1000px) {
+      margin-bottom: 0px !important;
+    }
+  }
+
+  .wp-block-group-irina {
+    margin-bottom: 300px !important;
+    @media (max-width: 1000px) {
+      margin-bottom: 0px !important;
+    }
+  }
+
+  .wp-block-group-soren {
+    margin-bottom: 350px !important;
+    @media (max-width: 1000px) {
+      margin-bottom: 0px !important;
+    }
+  }
+
+  .wp-block-group-thorben {
+    margin-bottom: 150px !important;
+    @media (max-width: 1000px) {
+      margin-bottom: 0px !important;
+    }
+  }
+
+  .wp-block-image-mikela {
+    margin-bottom: 250px !important;
+    @media (max-width: 1000px) {
+      margin-bottom: 0px !important;
+    }
+  }
+
+  .wp-block-group-thomas {
+    margin-bottom: 150px !important;
     @media (max-width: 1000px) {
       margin-bottom: 0px !important;
     }
@@ -84,6 +120,8 @@ const PageTemplate = ({data}) => {
               __html: data.wpPage.content
             }}
           />
+          <h2>Partners</h2>
+          <Partners />
         </Wrapper>
       </Layout>
     </>

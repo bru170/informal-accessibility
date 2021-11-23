@@ -25,7 +25,7 @@ const archiveTemplate = ({
         <Wrapper>
           <h1 style={{marginTop: "30px"}}>Engagements</h1>
           <p>
-            The content on this page documents our proccess and update you on events and
+            The content on this page documents our proccess and updates you on events and
             publications
           </p>
           <ArchiveCategories catId={catId} categories={categories.edges} />
