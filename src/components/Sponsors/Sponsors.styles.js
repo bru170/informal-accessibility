@@ -1,13 +1,11 @@
 import styled from "styled-components"
 
 export const Image = styled.img`
-  margin-top: 30px;
-  width: 320px;
-  height: auto;
+  width: 250px;
+  max-height: auto;
 
   @media (max-width: 1000px) {
-    margin-top: 60px;
-    width: 250px;
+    width: 150px;
     height: auto;
   }
 `

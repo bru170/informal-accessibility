@@ -6,6 +6,7 @@ import Header from "../Header/Header"
 import MobileMenu from "../Navigation/MobileMenu/MobileMenu"
 import {Primary, GlobalStyles} from "./Layout.styles"
 import "@reach/skip-nav/styles.css"
+import Sponsors from "../Sponsors/Sponsors"
 
 const Layout = ({children}) => {
   const [menuOpen, setMenuOpen] = useState(false)
