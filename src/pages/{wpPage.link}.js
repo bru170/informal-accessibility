@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 40px;
+  margin-bottom: 100px;
   text-align: left;
 `
 
@@ -33,6 +34,20 @@ const Content = styled.div`
 
   .wp-block-group-mona {
     margin-bottom: 250px !important;
+    @media (max-width: 1000px) {
+      margin-bottom: 0px !important;
+    }
+  }
+
+  .wp-block-group-barbara {
+    margin-bottom: 150px !important;
+    @media (max-width: 1000px) {
+      margin-bottom: 0px !important;
+    }
+  }
+
+  .wp-block-group-kath {
+    margin-bottom: 150px !important;
     @media (max-width: 1000px) {
       margin-bottom: 0px !important;
     }
@@ -67,7 +82,7 @@ const Content = styled.div`
   }
 
   .wp-block-group-thomas {
-    margin-bottom: 150px !important;
+    margin-bottom: 250px !important;
     @media (max-width: 1000px) {
       margin-bottom: 0px !important;
     }
