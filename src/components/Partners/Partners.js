@@ -1,8 +1,8 @@
 import React from "react"
 import {Image} from "./partners.styles"
-import Familie from "../../images/PartnersImg/famalie.png"
-import Implement from "../../images/PartnersImg/Implement.png"
-import Lararforbundet from "../../images/PartnersImg/Lararforbundet.png"
+import Familie from "../../images/partnerLogos/famalie.png"
+import Implement from "../../images/partnerLogos/implement.png"
+import Lararforbundet from "../../images/partnerLogos/lararforbundet.png"
 
 const Partners = () => {
   return (
