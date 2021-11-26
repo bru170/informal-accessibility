@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 export const Container = styled.div`
   width: 100%;
-  background: #bb3355;
 `
 export const Wrapper = styled.div`
   display: flex;
@@ -44,13 +43,10 @@ export const ImageITU = styled.img`
     width: 400px;
     height: unset;
     display: inline;
-    /* margin-left: auto;
-    padding-top: 50px;
-    margin-right: auto; */
   }
 
   @media (max-width: 800px) {
-    width: 300px;
+    width: 250px;
     height: unset;
     padding: 50px;
     display: block;

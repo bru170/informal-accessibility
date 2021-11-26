@@ -11,8 +11,19 @@ const Wrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 40px;
-  margin-bottom: 100px;
   text-align: left;
+
+  @media (max-width: 1367px) {
+    margin-bottom: 550px;
+  }
+
+  @media (max-width: 1025px) {
+    margin-bottom: 350px;
+  }
+
+  @media (max-width: 900px) {
+    margin-bottom: 550px;
+  }
 `
 
 const Content = styled.div`
@@ -96,7 +107,7 @@ const Content = styled.div`
   }
 
   .wp-block-group-thomas {
-    margin-bottom: 200px !important;
+    margin-bottom: 350px !important;
     @media (max-width: 1367px) {
       margin-bottom: 0px !important;
     }
@@ -131,7 +142,42 @@ const Content = styled.div`
   }
 
   p {
-    word-break: break-all;
+    overflow-wrap: break-word;
+  }
+
+  .wp-block-group-partners {
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-evenly;
+
+    @media (max-width: 1367px) {
+      display: inline;
+      align-items: unset;
+      justify-content: unset;
+    }
+  }
+
+  .wp-block-image-partners-logo {
+    width: 250px;
+    height: auto;
+
+    @media (max-width: 1367px) {
+      width: 400px;
+      height: unset;
+      padding: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 800px) {
+      width: 300px;
+      height: unset;
+      padding: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 `
 
@@ -158,8 +204,8 @@ const PageTemplate = ({data}) => {
               __html: data.wpPage.content
             }}
           />
-          <h2>Partners</h2>
-          <Partners />
+          {/* <h2>Partners</h2>
+          <Partners /> */}
         </Wrapper>
       </Layout>
     </>
