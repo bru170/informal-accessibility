@@ -82,6 +82,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Fira Sans';
     font-size: 1.25rem;
     margin-bottom: 1.45rem;
+    overflow-wrap: break-word;
   }
 
   h1 {
