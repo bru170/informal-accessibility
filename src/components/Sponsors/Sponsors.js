@@ -9,10 +9,27 @@ const Sponsors = () => {
   return (
     <Container>
       <Wrapper>
-        <Image src={CDW} alt="Logo for one of our sponsors CDW" />
-        <Image src={GOTHENBURG} alt="Logo for one of our sponsors University of Gothenburg" />
-        <Image src={AGDER} alt="Logo for one of our sponsors University of Agder" />
-        <ImageITU src={ITU} alt="Logo for one of our sponsors ITU" />
+        <a
+          aria-label="opens webpage for our partner center for digital welfare"
+          href="https://cdw.itu.dk/ "
+        >
+          <Image src={CDW} alt="Logo for one of our sponsors CDW" />
+        </a>
+        <a
+          aria-label="opens webpage for our partner center for gothenburg university"
+          href="https://www.gu.se/en"
+        >
+          <Image src={GOTHENBURG} alt="Logo for one of our sponsors University of Gothenburg" />
+        </a>
+        <a
+          aria-label="opens webpage for our partner for university of agder"
+          href="https://www.uia.no/en"
+        >
+          <Image src={AGDER} alt="Logo for one of our sponsors University of Agder" />
+        </a>
+        <a aria-label="opens webpage for our partner for ITU" href="https://itu.dk/">
+          <ImageITU src={ITU} alt="Logo for one of our sponsors ITU" />
+        </a>
       </Wrapper>
     </Container>
   )
