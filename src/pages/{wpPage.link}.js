@@ -107,7 +107,7 @@ const Content = styled.div`
   }
 
   .wp-block-group-thomas {
-    margin-bottom: 350px !important;
+    margin-bottom: 300px !important;
     @media (max-width: 1367px) {
       margin-bottom: 0px !important;
     }
