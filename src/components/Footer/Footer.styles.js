@@ -2,16 +2,16 @@ import styled from "styled-components"
 
 export const Container = styled.footer`
   background: #bb3355;
-`
-export const SponsorContainer = styled.footer`
-  background: #bb3355;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 `
 
 export const Wrapper = styled.div`
-  max-width: 1000px;
-  padding: 10px;
-  margin: 0 auto;
+  padding: 110px 0 0 0;
+  margin: 2rem;
+
+  @media (max-width: 800px) {
+    padding: 20px 0 0 0;
+  }
 `
 
 export const Para = styled.p`
