@@ -33,6 +33,12 @@ export const Image = styled.img`
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media (max-width: 600px) {
+    width: 200px;
+    height: unset;
+    display: inline;
+  }
 `
 
 export const ImageITU = styled.img`
@@ -52,5 +58,11 @@ export const ImageITU = styled.img`
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (max-width: 600px) {
+    width: 200px;
+    height: unset;
+    display: inline;
   }
 `

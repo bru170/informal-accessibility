@@ -5,8 +5,9 @@ export const MobileMenuOverlay = styled.ul`
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 50px;
-  margin-left: 1rem;
+  top: 60px;
+  margin-left: auto;
+  padding-left: 20px !important;
   width: 100%;
   background-color: #f0f0f0;
   padding-bottom: 1rem;
@@ -20,6 +21,10 @@ export const MobileMenuOverlay = styled.ul`
 
   @media (min-width: 800px) {
     display: none;
+  }
+
+  li {
+    padding-bottom: 10px;
   }
 `
 export const TextPadding = styled.nav`

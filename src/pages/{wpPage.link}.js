@@ -178,6 +178,12 @@ const Content = styled.div`
       margin-left: auto;
       margin-right: auto;
     }
+
+    @media (max-width: 600px) {
+      width: 200px;
+      height: unset;
+      display: inline;
+    }
   }
 `
 
