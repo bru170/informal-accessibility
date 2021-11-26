@@ -40,8 +40,6 @@ const archiveTemplate = ({
               <Hr />
             </article>
           ))}
-          <strong style={{paddingRight: 10}}>Tags:</strong>
-          <Hr />
           <Pagination catUri={catUri} page={currentPage} totalPages={numPages} />
         </Wrapper>
       </Layout>

@@ -17,20 +17,6 @@ const CategoriesPostbar = ({categories, tags}) => (
         </List>
       ) : null
     )}
-    <h3>Tags:</h3>
-    {tags.map((tags) =>
-      tags.slug !== "all-posts" ? (
-        <List key={tags.id}>
-          <Link to={`${tags.uri}`}>
-            <span dangerouslySetInnerHTML={{__html: tags.name}} />
-          </Link>
-        </List>
-      ) : (
-        <span>
-          <p>No tags available</p>
-        </span>
-      )
-    )}
   </Wrapper>
 )
 

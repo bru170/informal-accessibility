@@ -131,7 +131,7 @@ const Content = styled.div`
   }
 
   p {
-    overflow-wrap: break-word;
+    word-break: break-all;
   }
 `
 
