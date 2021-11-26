@@ -10,9 +10,9 @@ const Sponsors = () => {
     <Container>
       <Wrapper>
         <Image src={CDW} alt="Logo for one of our sponsors CDW" />
-        <ImageITU src={ITU} alt="Logo for one of our sponsors ITU" />
-        <Image src={AGDER} alt="Logo for one of our sponsors University of Agder" />
         <Image src={GOTHENBURG} alt="Logo for one of our sponsors University of Gothenburg" />
+        <Image src={AGDER} alt="Logo for one of our sponsors University of Agder" />
+        <ImageITU src={ITU} alt="Logo for one of our sponsors ITU" />
       </Wrapper>
     </Container>
   )

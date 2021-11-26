@@ -5,13 +5,13 @@ import {Container, Para, Wrapper, SponsorContainer} from "./Footer.styles"
 const FooterContainer = () => {
   return (
     <>
-      <SponsorContainer>
-        <Wrapper>
-          <h4>Sponsors</h4>
-          <Sponsors />
-        </Wrapper>
-      </SponsorContainer>
       <Container>
+        <SponsorContainer>
+          <Wrapper>
+            <h4>Sponsors</h4>
+            <Sponsors />
+          </Wrapper>
+        </SponsorContainer>
         <Wrapper>
           <h4>Design and Development</h4>
           <span>

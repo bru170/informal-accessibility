@@ -20,77 +20,91 @@ const Content = styled.div`
 
   .is-style-twentytwentyone-border {
     margin-bottom: 180px;
-    @media (max-width: 1000px) {
+    @media (max-width: 1367px) {
       margin-bottom: 0px !important;
     }
   }
 
   .leader {
     margin-bottom: 100px !important;
-    @media (max-width: 1000px) {
+    @media (max-width: 1367px) {
+      margin-bottom: 0px !important;
+    }
+  }
+
+  .wp-block-group-carl {
+    margin-bottom: 120px !important;
+    @media (max-width: 1367px) {
       margin-bottom: 0px !important;
     }
   }
 
   .wp-block-group-mona {
     margin-bottom: 250px !important;
-    @media (max-width: 1000px) {
+    @media (max-width: 1367px) {
       margin-bottom: 0px !important;
     }
   }
 
   .wp-block-group-barbara {
-    margin-bottom: 150px !important;
-    @media (max-width: 1000px) {
+    margin-bottom: 100px !important;
+    @media (max-width: 1367px) {
       margin-bottom: 0px !important;
     }
   }
 
   .wp-block-group-kath {
     margin-bottom: 150px !important;
-    @media (max-width: 1000px) {
+    @media (max-width: 1367px) {
       margin-bottom: 0px !important;
     }
   }
 
   .wp-block-group-irina {
-    margin-bottom: 300px !important;
-    @media (max-width: 1000px) {
+    margin-bottom: 200px !important;
+    @media (max-width: 1367px) {
       margin-bottom: 0px !important;
     }
   }
 
   .wp-block-group-soren {
-    margin-bottom: 350px !important;
-    @media (max-width: 1000px) {
+    margin-bottom: 250px !important;
+    @media (max-width: 1367px) {
       margin-bottom: 0px !important;
     }
   }
 
   .wp-block-group-thorben {
     margin-bottom: 150px !important;
-    @media (max-width: 1000px) {
+    @media (max-width: 1367px) {
       margin-bottom: 0px !important;
     }
   }
 
-  .wp-block-image-mikela {
-    margin-bottom: 250px !important;
-    @media (max-width: 1000px) {
+  .wp-block-group-mikela {
+    margin-bottom: 200px !important;
+    @media (max-width: 1367px) {
+      margin-bottom: 0px !important;
+    }
+  }
+
+  .wp-block-group-michala {
+    margin-bottom: 200px !important;
+    @media (max-width: 1367px) {
       margin-bottom: 0px !important;
     }
   }
 
   .wp-block-group-thomas {
-    margin-bottom: 250px !important;
-    @media (max-width: 1000px) {
+    margin-bottom: 200px !important;
+    @media (max-width: 1367px) {
       margin-bottom: 0px !important;
     }
   }
 
   .wp-block-group-annika {
-    margin-bottom: 250px !important;
-    @media (max-width: 1000px) {
+    margin-bottom: 230px !important;
+    @media (max-width: 1367px) {
       margin-bottom: 0px !important;
     }
   }
@@ -100,15 +114,24 @@ const Content = styled.div`
     margin-left: 0;
     display: block;
     width: 35%;
-    @media (max-width: 1000px) {
+    @media (max-width: 1367px) {
       width: 100%;
-      display: inline;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
   h3 {
     padding-top: 20px;
     margin-bottom: 0px;
+  }
+
+  @media (max-width: 1367px) {
+    padding-bottom: 10px !important;
+  }
+
+  p {
+    overflow-wrap: break-word;
   }
 `
 
