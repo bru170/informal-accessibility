@@ -8,8 +8,8 @@ export const Wrapper = styled.nav`
 `
 
 export const Image = styled.img`
-  margin-top: 60px;
-  width: 320px;
+  margin-top: 10px;
+  width: 120px;
   height: auto;
 `
 

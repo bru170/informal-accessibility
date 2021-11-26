@@ -1,7 +1,7 @@
 import React from "react"
 import {Link} from "gatsby"
 import Navigation from "../Navigation/Navigation"
-import Logo from "../../images/sos-logo.svg"
+import Logo from "../../images/sos-logo.png"
 import {useMenuQuery} from "../../hooks/useMenuQuery"
 import {Wrapper, Content, Image, LogoContainer} from "./Header.styles"
 
