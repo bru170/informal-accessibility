@@ -1,17 +1,18 @@
 import styled from "styled-components"
 
-export const Container = styled.footer`
+export const Wrapper = styled.div`
   background: #bb3355;
   padding-bottom: 200px;
 `
 
-export const Wrapper = styled.div`
-  padding: 110px 0 0 0;
-  margin: 2rem;
+export const Container = styled.footer`
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 50px;
+`
 
-  @media (max-width: 800px) {
-    padding: 20px 0 0 0;
-  }
+export const StyledH3 = styled.h3`
+  color: white;
 `
 
 export const Para = styled.p`
@@ -35,10 +36,6 @@ export const SiteMap = styled.ul`
     text-decoration-color: white;
     text-underline-offset: 3px;
     text-decoration-thickness: 3px;
-  }
-
-  h3 {
-    font-size: 1rem;
   }
 
   a {

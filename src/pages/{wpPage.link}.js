@@ -5,7 +5,6 @@ import HeroBanner from "../components/HeroBanner/HeroBanner"
 import Layout from "../components/Layout/Layout"
 import BreadCrumb from "../components/BreadCrumb/BreadCrumb"
 import styled from "styled-components"
-import Partners from "../components/Partners/Partners"
 
 const Wrapper = styled.div`
   max-width: 1000px;
@@ -210,8 +209,6 @@ const PageTemplate = ({data}) => {
               __html: data.wpPage.content
             }}
           />
-          {/* <h2>Partners</h2>
-          <Partners /> */}
         </Wrapper>
       </Layout>
     </>
