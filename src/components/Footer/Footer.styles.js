@@ -1,14 +1,26 @@
 import styled from "styled-components"
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.footer`
   background: #bb3355;
   padding-bottom: 200px;
 `
 
-export const Container = styled.footer`
+export const Container = styled.div`
   max-width: 1000px;
-  margin: 0 auto;
+  margin: auto;
   padding-top: 50px;
+
+  @media (max-width: 1068px) {
+    margin: 2em;
+  }
+
+  @media (max-width: 768px) {
+    margin: 2em;
+  }
+
+  @media (max-width: 568px) {
+    margin: 2em;
+  }
 `
 
 export const StyledH3 = styled.h3`
