@@ -61,7 +61,7 @@ export const ImageITU = styled.img`
   }
 
   @media (max-width: 600px) {
-    width: 200px;
+    width: 150px;
     height: unset;
     display: inline;
   }

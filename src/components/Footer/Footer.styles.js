@@ -10,6 +10,26 @@ export const Container = styled.div`
   margin: auto;
   padding-top: 50px;
 
+  a {
+    color: white !important;
+    text-decoration: underline;
+  }
+
+  a:active,
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 3px;
+  }
+
+  a:focus {
+    outline: white solid 3px !important;
+    padding: 0px !important;
+    border-radius: 8%;
+    color: black;
+  }
+
   @media (max-width: 1068px) {
     margin: 2em;
   }
@@ -48,15 +68,6 @@ export const SiteMap = styled.ul`
     text-decoration-color: white;
     text-underline-offset: 3px;
     text-decoration-thickness: 3px;
-  }
-
-  a {
-    color: white !important;
-    text-decoration: underline;
-  }
-
-  a:hover {
-    text-decoration: underline;
   }
 
   li {
