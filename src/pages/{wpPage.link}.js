@@ -28,164 +28,89 @@ const Wrapper = styled.div`
 const Content = styled.div`
   padding-bottom: 100px;
 
-  .is-style-twentytwentyone-border {
-    margin-bottom: 180px;
-    @media (max-width: 1367px) {
-      margin-bottom: 0px !important;
-    }
-  }
-
-  .leader {
-    margin-bottom: 100px !important;
-    @media (max-width: 1367px) {
-      margin-bottom: 0px !important;
-    }
-  }
-
-  .wp-block-group-carl {
+  .wp-block-group {
     margin-bottom: 120px !important;
+    background-color: pink;
     @media (max-width: 1367px) {
       margin-bottom: 0px !important;
     }
-  }
 
-  .wp-block-group-mona {
-    margin-bottom: 250px !important;
-    @media (max-width: 1367px) {
-      margin-bottom: 0px !important;
-    }
-  }
-
-  .wp-block-group-barbara {
-    margin-bottom: 100px !important;
-    @media (max-width: 1367px) {
-      margin-bottom: 0px !important;
-    }
-  }
-
-  .wp-block-group-kath {
-    margin-bottom: 150px !important;
-    @media (max-width: 1367px) {
-      margin-bottom: 0px !important;
-    }
-  }
-
-  .wp-block-group-irina {
-    margin-bottom: 200px !important;
-    @media (max-width: 1367px) {
-      margin-bottom: 0px !important;
-    }
-  }
-
-  .wp-block-group-soren {
-    margin-bottom: 250px !important;
-    @media (max-width: 1367px) {
-      margin-bottom: 0px !important;
-    }
-  }
-
-  .wp-block-group-thorben {
-    margin-bottom: 150px !important;
-    @media (max-width: 1367px) {
-      margin-bottom: 0px !important;
-    }
-  }
-
-  .wp-block-group-mikela {
-    margin-bottom: 200px !important;
-    @media (max-width: 1367px) {
-      margin-bottom: 0px !important;
-    }
-  }
-
-  .wp-block-group-michala {
-    margin-bottom: 200px !important;
-    @media (max-width: 1367px) {
-      margin-bottom: 0px !important;
-    }
-  }
-
-  .wp-block-group-thomas {
-    margin-bottom: 300px !important;
-    @media (max-width: 1367px) {
-      margin-bottom: 0px !important;
-    }
-  }
-
-  .wp-block-group-annika {
-    margin-bottom: 230px !important;
-    @media (max-width: 1367px) {
-      margin-bottom: 0px !important;
-    }
-  }
-
-  .wp-block-image {
-    float: left;
-    margin-left: 0;
-    display: block;
-    width: 35%;
-    @media (max-width: 1367px) {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
-  h3 {
-    padding-top: 20px;
-    margin-bottom: 0px;
-  }
-
-  @media (max-width: 1367px) {
-    padding-bottom: 10px !important;
-  }
-
-  p {
-    overflow-wrap: break-word;
-  }
-
-  .wp-block-group-partners {
-    /* display: flex; */
-    align-items: center;
-    justify-content: space-evenly;
-
-    @media (max-width: 1367px) {
-      display: inline;
-      align-items: unset;
-      justify-content: unset;
-    }
-  }
-
-  .wp-block-image-partners-logo {
-    width: 250px;
-    height: auto;
-
-    @media (max-width: 1367px) {
-      width: 400px;
-      height: unset;
-      padding: 20px;
+    .wp-block-image {
+      float: left;
+      margin-left: 0;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
+      width: 30%;
+      @media (max-width: 1367px) {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
-    @media (max-width: 800px) {
-      width: 300px;
-      height: unset;
-      padding: 20px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+    h3 {
+      padding-top: 30px;
+      margin-bottom: 0px;
+
+      @media (max-width: 1367px) {
+        padding-bottom: 10px !important;
+      }
     }
 
-    @media (max-width: 600px) {
-      width: 200px;
-      height: unset;
-      display: inline;
+    h2 {
+      padding-top: 30px;
+      margin-bottom: 0px;
     }
+
+    p {
+      overflow-wrap: break-word;
+    }
+
+    .wp-block-group-partners {
+      align-items: center;
+      justify-content: space-evenly;
+
+      @media (max-width: 1367px) {
+        display: inline;
+        align-items: unset;
+        justify-content: unset;
+      }
+    }
+
+    .wp-block-image-partners-logo {
+      width: 250px;
+      height: auto;
+      background-color: pink;
+
+      @media (max-width: 1367px) {
+        width: 400px;
+        height: unset;
+        padding: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media (max-width: 800px) {
+        width: 300px;
+        height: unset;
+        padding: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media (max-width: 600px) {
+        width: 200px;
+        height: unset;
+        display: inline;
+      }
+    }
+    /* 
+    .advisoryGroup {
+      padding-top: 150px;
+    } */
   }
 `
-
 const PageTemplate = ({data}) => {
   console.log(data.wpPage.content)
   return (

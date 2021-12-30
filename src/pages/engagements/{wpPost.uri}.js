@@ -51,7 +51,7 @@ const PostTemplate = ({data}) => {
         <Wrapper>
           <BreadCrumb
             parent={{
-              uri: "/engagements/all-posts",
+              uri: "/category/all-posts",
               title: "Engagements"
             }}
           />
