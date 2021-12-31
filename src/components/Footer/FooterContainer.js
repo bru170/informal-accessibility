@@ -30,7 +30,6 @@ const FooterContainer = () => {
           <Para>&#169; 2021</Para>
         </span>
 
-        <StyledH3>Sponsors</StyledH3>
         <Sponsors />
       </Container>
     </Wrapper>

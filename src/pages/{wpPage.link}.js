@@ -28,9 +28,22 @@ const Wrapper = styled.div`
 const Content = styled.div`
   padding-bottom: 100px;
 
+  @media (max-width: 1367px) {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .wp-block-separator {
+    margin-bottom: 50px;
+    border-color: transparent;
+
+    @media (max-width: 1367px) {
+      padding-bottom: 10px !important;
+    }
+  }
+
   .wp-block-group {
     margin-bottom: 120px !important;
-    background-color: pink;
     @media (max-width: 1367px) {
       margin-bottom: 0px !important;
     }
@@ -79,7 +92,6 @@ const Content = styled.div`
     .wp-block-image-partners-logo {
       width: 250px;
       height: auto;
-      background-color: pink;
 
       @media (max-width: 1367px) {
         width: 400px;
@@ -105,10 +117,6 @@ const Content = styled.div`
         display: inline;
       }
     }
-    /* 
-    .advisoryGroup {
-      padding-top: 150px;
-    } */
   }
 `
 const PageTemplate = ({data}) => {

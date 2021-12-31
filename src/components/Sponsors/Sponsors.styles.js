@@ -20,7 +20,7 @@ export const Image = styled.img`
   height: 65px;
 
   @media (max-width: 1367px) {
-    width: 400px;
+    width: 200px;
     height: unset;
     display: inline;
   }
@@ -35,7 +35,7 @@ export const Image = styled.img`
   }
 
   @media (max-width: 600px) {
-    width: 200px;
+    width: 300px;
     height: unset;
     display: inline;
   }
@@ -46,7 +46,7 @@ export const ImageITU = styled.img`
   height: 40px;
 
   @media (max-width: 1367px) {
-    width: 400px;
+    width: 300px;
     height: unset;
     display: inline;
   }
@@ -61,7 +61,7 @@ export const ImageITU = styled.img`
   }
 
   @media (max-width: 600px) {
-    width: 150px;
+    width: 250px;
     height: unset;
     display: inline;
   }

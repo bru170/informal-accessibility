@@ -1,6 +1,6 @@
 import React from "react"
 import {Helmet} from "react-helmet"
-import {Link, graphql} from "gatsby"
+import {graphql} from "gatsby"
 import Layout from "../components/Layout/Layout"
 import ArchiveCategories from "../components/ArchiveCategories/ArchiveCategories"
 import Pagination from "../components/Pagination/Pagination"
@@ -11,6 +11,7 @@ const archiveTemplate = ({
   data: {allWpPost},
   pageContext: {catId, catName, catUri, categories, numPages, currentPage}
 }) => {
+  console.log(allWpPost)
   return (
     <>
       <div className="application">
@@ -25,8 +26,9 @@ const archiveTemplate = ({
         <Wrapper>
           <h1 style={{marginTop: "30px"}}>Engagements</h1>
           <p>
-            The content on this page documents our proccess and updates you on events and
-            publications
+            This page documents our engagements; in other words, what we’ve been up to. Here we
+            archive research insights, reflections on literature, academic publications, teaching
+            materials, upcoming events and more.
           </p>
           <ArchiveCategories catId={catId} categories={categories.edges} />
           {/* <h2 dangerouslySetInnerHTML={{__html: catName}} id="catergory" /> */}
@@ -50,12 +52,8 @@ const archiveTemplate = ({
 export default archiveTemplate
 
 export const pageQuery = graphql`
-  query ($catId: String!, $skip: Int!, $limit: Int!) {
-    allWpPost(
-      filter: {categories: {nodes: {elemMatch: {id: {eq: $catId}}}}}
-      skip: $skip
-      limit: $limit
-    ) {
+  query ($catId: String!, $skip: Int!) {
+    allWpPost(filter: {categories: {nodes: {elemMatch: {id: {eq: $catId}}}}}, skip: $skip) {
       edges {
         node {
           id
