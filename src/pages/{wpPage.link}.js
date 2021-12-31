@@ -46,6 +46,8 @@ const Content = styled.div`
     margin-bottom: 120px !important;
     @media (max-width: 1367px) {
       margin-bottom: 0px !important;
+      padding-top: 0px !important;
+      margin-top: 0px !important;
     }
 
     .wp-block-image {
@@ -55,6 +57,8 @@ const Content = styled.div`
       width: 30%;
       @media (max-width: 1367px) {
         width: 100%;
+        padding-top: 0%;
+        margin-top: 0;
         margin-left: auto;
         margin-right: auto;
       }
@@ -120,7 +124,6 @@ const Content = styled.div`
   }
 `
 const PageTemplate = ({data}) => {
-  console.log(data.wpPage.content)
   return (
     <>
       <div className="application">

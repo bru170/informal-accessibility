@@ -11,7 +11,7 @@ const archiveTemplate = ({
   data: {allWpPost},
   pageContext: {catId, catName, catUri, categories, numPages, currentPage}
 }) => {
-  console.log(allWpPost)
+  console.log(numPages)
   return (
     <>
       <div className="application">
@@ -52,8 +52,13 @@ const archiveTemplate = ({
 export default archiveTemplate
 
 export const pageQuery = graphql`
-  query ($catId: String!, $skip: Int!) {
-    allWpPost(filter: {categories: {nodes: {elemMatch: {id: {eq: $catId}}}}}, skip: $skip) {
+  query ($catId: String!, $skip: Int!, $limit: Int!) {
+    allWpPost(
+      sort: {fields: date, order: DESC}
+      filter: {categories: {nodes: {elemMatch: {id: {eq: $catId}}}}}
+      skip: $skip
+      limit: $limit
+    ) {
       edges {
         node {
           id

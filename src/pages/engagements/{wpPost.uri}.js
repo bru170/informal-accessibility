@@ -30,6 +30,22 @@ const StyledH1 = styled.h1`
   }
 `
 
+const Content = styled.div`
+  .wp-block-image {
+    float: left;
+    margin-left: 0;
+    display: block;
+    width: 100%;
+    @media (max-width: 1367px) {
+      width: 100%;
+      padding-top: 0%;
+      margin-top: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+`
+
 const PersonIcon = styled(BsFillPersonFill)`
   transform: scale(1.5);
   color: grey;
@@ -51,7 +67,7 @@ const PostTemplate = ({data}) => {
         <Wrapper>
           <BreadCrumb
             parent={{
-              uri: "/category/all-posts",
+              uri: "/Engagements/all-posts",
               title: "Engagements"
             }}
           />
@@ -69,7 +85,7 @@ const PostTemplate = ({data}) => {
             style={{marginBottom: 20}}
           />
           <PostContent>
-            <div dangerouslySetInnerHTML={{__html: data.post.content}} />
+            <Content dangerouslySetInnerHTML={{__html: data.post.content}} />
           </PostContent>
           <CategoriesPostbar
             date={data.post.date}
@@ -84,29 +100,6 @@ const PostTemplate = ({data}) => {
 }
 
 export default PostTemplate
-
-// export const pageQuery = graphql`
-//   query ($id: String!) {
-//     post: wpPost(id: {eq: $id}) {
-//       title
-//       content
-//       author {
-//         node {
-//           name
-//         }
-//       }
-//       date(formatString: "LL")
-//       categories {
-//         nodes {
-//           id
-//           name
-//           uri
-//           slug
-//         }
-//       }
-//     }
-//   }
-// `
 
 export const pageQuery = graphql`
   query ($id: String!) {
