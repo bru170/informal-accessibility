@@ -23,6 +23,10 @@ const NotFoundPage = () => (
         <StaticImage
           src="src/images/error 404.jpg"
           alt="A women looking at her phone confused because it says 404"
+          placeholder="blurred"
+          layout="fixed"
+          width={500}
+          height={500}
         />
       </Wrapper>
     </Layout>
