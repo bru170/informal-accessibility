@@ -12,7 +12,7 @@ const FooterContainer = () => {
             <a href="/">Homepage</a>
           </li>
           <li>
-            <a href="/category/all-posts/">Engagements</a>
+            <a href="/engagements/all-posts/">Engagements</a>
           </li>
           <li>
             <a href="/people/">People</a>
