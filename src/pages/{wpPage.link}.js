@@ -86,7 +86,7 @@ const Content = styled.div`
     }
 
     .wp-block-image-partners-logo {
-      width: 250px;
+      width: 290px;
       height: auto;
 
       @media (max-width: 1367px) {
