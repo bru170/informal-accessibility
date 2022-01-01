@@ -15,10 +15,12 @@ export const Wrapper = styled.div`
 
 const NotFoundPage = () => (
   <>
-    <Wrapper>
-      <h1>404: Not Found</h1>
-      <p>You just hit a route that doesn&#39;t exist..mmmm. the sadness.</p>
-    </Wrapper>
+    <Layout>
+      <Wrapper>
+        <h1>404: Not Found</h1>
+        <p>You just hit a route that doesn&#39;t exist..mmmm. the sadness.</p>
+      </Wrapper>
+    </Layout>
   </>
 )
 
