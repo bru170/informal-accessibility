@@ -6,6 +6,8 @@ export const Wrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 40px;
+  padding-bottom: 100px;
+
   text-align: left;
 
   h2 {

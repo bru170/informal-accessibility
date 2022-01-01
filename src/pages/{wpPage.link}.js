@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 40px;
+
   text-align: left;
 
   @media (max-width: 1367px) {
