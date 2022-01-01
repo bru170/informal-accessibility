@@ -13,15 +13,7 @@ const Wrapper = styled.div`
   text-align: left;
 
   @media (max-width: 1367px) {
-    margin-bottom: 550px;
-  }
-
-  @media (max-width: 1025px) {
-    margin-bottom: 350px;
-  }
-
-  @media (max-width: 900px) {
-    margin-bottom: 550px;
+    margin-bottom: 100px;
   }
 `
 
@@ -98,27 +90,12 @@ const Content = styled.div`
       height: auto;
 
       @media (max-width: 1367px) {
-        width: 400px;
+        width: 100% !important;
         height: unset;
         padding: 20px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-      }
-
-      @media (max-width: 800px) {
-        width: 300px;
-        height: unset;
-        padding: 20px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      @media (max-width: 600px) {
-        width: 200px;
-        height: unset;
-        display: inline;
       }
     }
   }
