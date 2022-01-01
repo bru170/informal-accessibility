@@ -7,6 +7,7 @@ export const Wrapper = styled.footer`
 
 export const Container = styled.div`
   max-width: 1000px;
+  max-height: auto;
   margin: auto;
   padding-top: 50px;
 
@@ -28,6 +29,10 @@ export const Container = styled.div`
     padding: 0px !important;
     border-radius: 8%;
     color: black;
+  }
+
+  @media (max-width: 1068px) {
+    margin: 2em;
   }
 
   @media (max-width: 1068px) {

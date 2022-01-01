@@ -5,7 +5,11 @@ const Hamburger = ({handleOverlayMenu}) => {
   return (
     <>
       {MenuOpenIcon && (
-        <MenuOpenIcon aria-label="opens navbar menu for mobile" onClick={handleOverlayMenu} />
+        <MenuOpenIcon
+          aria-label="opens navbar menu for mobile"
+          onClick={handleOverlayMenu}
+          tabindex="0"
+        />
       )}
     </>
   )
