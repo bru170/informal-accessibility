@@ -21,7 +21,7 @@ const NotFoundPage = () => (
         <h1>404: Not Found</h1>
         <p>You just hit a route that doesn&#39;t exist..mmmm. the sadness.</p>
         <StaticImage
-          src="src/images/error 404.jpg"
+          src="./images/error404.jpg"
           alt="A women looking at her phone confused because it says 404"
           placeholder="blurred"
           layout="fixed"
