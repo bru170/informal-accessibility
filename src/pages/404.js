@@ -14,18 +14,13 @@ export const Wrapper = styled.div`
   }
 `
 
-export const Image404 = styled.StaticImage`
-  width: 1000px !important;
-  height: 800px !important;
-`
-
 const NotFoundPage = () => (
   <>
     <Layout>
       <Wrapper>
         <h1>404: Not Found</h1>
         <p>You just hit a route that doesn&#39;t exist..mmmm. the sadness.</p>
-        <Image404
+        <Image
           src="../images/error404.jpg"
           alt="A women looking at her phone confused because it says 404"
           placeholder="blurred"
