@@ -2,6 +2,12 @@ import * as React from "react"
 import styled from "styled-components"
 import {StaticImage} from "gatsby-plugin-image"
 import Layout from "../components/Layout/Layout"
+import {GatsbyImage} from "gatsby-plugin-image"
+
+export const StyledImg = styled(GatsbyImage)`
+  height: 800px;
+  width: 100%;
+`
 
 export const Wrapper = styled.div`
   max-width: 1000px;
@@ -26,13 +32,10 @@ const NotFoundPage = () => (
         <h1>404: Not Found</h1>
         <p>You just hit a route that doesn&#39;t exist..mmmm. the sadness.</p>
 
-        <StaticImage
+        <StyledImg
           src="../images/error404.jpg"
           alt="A women looking at her phone confused because it says 404"
           placeholder="blurred"
-          layout="fixed"
-          width={1000}
-          height={700}
         />
       </Wrapper>
     </Layout>
