@@ -29,7 +29,10 @@ const NotFoundPage = () => (
       <Wrapper>
         <h1>404: Not Found</h1>
         <p>You just hit a route that doesn&#39;t exist..mmmm. the sadness.</p>
-        <img src={Image404} alt="A women looking at her phone confused because it says 404" />
+        <StyledImage
+          src={Image404}
+          alt="A women looking at her phone confused because it says 404"
+        />
       </Wrapper>
     </Layout>
   </>
