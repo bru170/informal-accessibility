@@ -7,7 +7,7 @@ const BreadCrumb = ({parent}) => (
     <Link to="/">
       <span>Home</span>
     </Link>
-    <span className="divider">//</span>
+    <span className="divider">/</span>
     {parent ? (
       <>
         <Link to={parent.uri}>
