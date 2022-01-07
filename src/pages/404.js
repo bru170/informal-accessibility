@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Layout from "../components/Layout/Layout"
 import Image404 from "../images/error404.jpg"
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
   max-width: 1000px;
   max-height: auto;
   margin: auto;
@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
   }
 `
 
-export const StyledImage = styled.img`
+const StyledImage = styled.img`
   width: 100%;
   height: 700px;
 `
