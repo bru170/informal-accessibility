@@ -71,7 +71,7 @@ const PostTemplate = ({data}) => {
               title: "Engagements"
             }}
           />
-          <StyledH1 dangerouslySetInnerHTML={{__html: data.post.title}} />
+          {/* <StyledH1 dangerouslySetInnerHTML={{__html: data.post.title}} />
           <span>
             <PersonIcon />
           </span>
@@ -83,7 +83,7 @@ const PostTemplate = ({data}) => {
           <PostDetails
             dangerouslySetInnerHTML={{__html: data.post.date}}
             style={{marginBottom: 20}}
-          />
+          /> */}
           <PostContent>
             <Content dangerouslySetInnerHTML={{__html: data.post.content}} />
           </PostContent>
