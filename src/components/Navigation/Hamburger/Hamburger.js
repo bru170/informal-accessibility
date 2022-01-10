@@ -9,6 +9,8 @@ const Hamburger = ({handleOverlayMenu}) => {
           aria-label="opens navbar menu for mobile"
           onClick={handleOverlayMenu}
           tabindex="0"
+          role="button"
+          onKeyUp={handleOverlayMenu}
         />
       )}
     </>
