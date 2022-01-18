@@ -67,23 +67,10 @@ const PostTemplate = ({data}) => {
         <Wrapper>
           <BreadCrumb
             parent={{
-              uri: "/engagements/all-posts",
+              uri: "/engagements/all-posts/",
               title: "Engagements"
             }}
           />
-          {/* <StyledH1 dangerouslySetInnerHTML={{__html: data.post.title}} />
-          <span>
-            <PersonIcon />
-          </span>
-          <PostDetails
-            dangerouslySetInnerHTML={{__html: data.post.author.node.name}}
-            style={{paddingLeft: "5px"}}
-          />
-          <span> - </span>
-          <PostDetails
-            dangerouslySetInnerHTML={{__html: data.post.date}}
-            style={{marginBottom: 20}}
-          /> */}
           <PostContent>
             <Content dangerouslySetInnerHTML={{__html: data.post.content}} />
           </PostContent>
