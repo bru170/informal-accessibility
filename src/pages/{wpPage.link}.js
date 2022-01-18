@@ -22,7 +22,7 @@ const Content = styled.div`
   padding-bottom: 100px;
 
   .contact-page-space {
-    padding-bottom: 500px;
+    padding-bottom: 250px;
   }
 
   @media (max-width: 1367px) {
