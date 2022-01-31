@@ -14,7 +14,7 @@ const archiveTemplate = ({
   console.log(numPages)
   return (
     <>
-      <div className="application">
+      <div>
         <Helmet>
           <meta charSet="utf-8" />
           <title>SOS Project</title>
