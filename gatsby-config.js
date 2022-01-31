@@ -32,7 +32,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: `https://dev-digital-welfare.pantheonsite.io/graphql`
+        url: `http://admin-soswelfare.space/graphql`
       }
     },
     `gatsby-plugin-styled-components`,
