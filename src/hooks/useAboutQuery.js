@@ -3,7 +3,7 @@ import {useStaticQuery, graphql} from "gatsby"
 export const useAboutQuery = () => {
   const data = useStaticQuery(graphql`
     query MyQuery {
-      wpPage(databaseId: {eq: 8}) {
+      wpPage(databaseId: {eq: 10}) {
         content
         featuredImage {
           node {
