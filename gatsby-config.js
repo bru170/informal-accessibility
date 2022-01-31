@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Home`,
-    description: `Kick off yoInfrastructures for partially digital citizens: Supporting informal welfare work in the digitized state `,
+    description: `Kick off Infrastructures for partially digital citizens: Supporting informal welfare work in the digitized state `,
     author: `@antoniabruno`
   },
   plugins: [
