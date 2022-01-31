@@ -37,7 +37,6 @@ const archiveTemplate = ({
               <StyledReadMore
                 dangerouslySetInnerHTML={{__html: post.node.title}}
                 to={`/engagements${post.node.uri}`}
-                tabindex="0"
               />
               <StyledDate dangerouslySetInnerHTML={{__html: post.node.date}} />
               <Hr />
