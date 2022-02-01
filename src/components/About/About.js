@@ -5,7 +5,7 @@ import {AboutWrapper} from "./About.styles"
 const About = () => {
   const data = useAboutQuery()
   // const content = data.wpPage.content
-  // console.log(content)
+  // console.log(contennt)
   return (
     <AboutWrapper>
       {/* <div
